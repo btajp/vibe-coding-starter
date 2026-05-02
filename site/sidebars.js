@@ -13,12 +13,24 @@ const sidebars = {
           type: 'category',
           label: '第0部：AIエージェントと学び始める準備',
           collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-0-start/index',
+          },
           items: [
             'route/part-0-start/concept',
             'route/part-0-start/start-here',
             'route/part-0-start/prepare-environment',
             'route/part-0-start/install-ai-agent',
             'route/part-0-start/clone-and-first-request',
+          ],
+        },
+        {
+          type: 'category',
+          label: '第1部：PC・OS・CLIの意味を回収する',
+          collapsed: false,
+          items: [
+            'route/part-1-pc-os-cli/index',
           ],
         },
       ],
