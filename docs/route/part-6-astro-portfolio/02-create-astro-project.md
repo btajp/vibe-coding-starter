@@ -17,6 +17,8 @@ Astroは、Webサイトを作るためのフレームワークです。
 第5部では、HTML、CSS、JavaScriptだけでページを作りました。
 Astroを使うと、ページ、コンポーネント、ビルド、公開向けファイル生成を扱いやすくなります。
 
+![Node.jsとnpmを確認してからAstroプロジェクトを作る流れ](../../images/route-astro-portfolio/create-astro-project-flow.png)
+
 ## Node.jsとnpmを確認する
 
 第0部で、AIエージェントを使い始めるためにNode.jsとnpmを入れました。
