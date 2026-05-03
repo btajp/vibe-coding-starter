@@ -23,6 +23,8 @@ fork
 → 自分のアカウント側にコピーを作る
 ```
 
+![Star、fork、cloneの違いを整理する](../../images/route-github-collaboration/star-fork-difference.png)
+
 ## この教材リポジトリを開く
 
 ブラウザで、この教材リポジトリを開きます。
