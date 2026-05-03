@@ -57,14 +57,27 @@ npm run build
 ## commitする
 
 意図した変更だけをcommitします。
+まず、含めるファイルを確認します。
+
+```bash
+git status
+```
+
+`node_modules`、`dist/`、`.env`、秘密情報が含まれていたら止まります。
+問題なければ、次のcommitに含めます。
 
 ```bash
 git add .
-git commit -m "Complete local portfolio draft"
+git status
+git diff --staged --stat
 ```
 
-ただし、`git add .` を使う前に、`git status` で含まれるファイルを確認してください。
-`node_modules`、`.env`、秘密情報が含まれていたら止まります。
+`git diff --staged --stat` で、次のcommitに入るファイルの概要を確認します。
+意図した変更だけならcommitします。
+
+```bash
+git commit -m "Complete local portfolio draft"
+```
 
 ## 何が起きたのか
 
