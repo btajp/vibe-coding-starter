@@ -111,7 +111,7 @@ ls dist
 開発中に見えていても、buildで失敗することがあります。
 公開前には必ずbuildします。
 
-## AIに聞いてよいこと
+## AIに聞いてみよう
 
 ```text
 Astroプロジェクトの package.json を見て、

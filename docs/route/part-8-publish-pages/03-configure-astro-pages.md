@@ -153,7 +153,7 @@ workflowは、自動で実行される設定です。
 - buildとdeployが分かれているか
 - 秘密情報をworkflowに直接書いていないか
 
-## AIに聞いてよいこと
+## AIに聞いてみよう
 
 ```text
 astro.config.mjs と .github/workflows/deploy.yml をレビューしてください。

@@ -88,7 +88,7 @@ git commit -m "Complete local portfolio draft"
 
 ここまで説明できれば、第6部は完了です。
 
-## AIに聞いてよいこと
+## AIに聞いてみよう
 
 ```text
 第6部の完了確認をしてください。

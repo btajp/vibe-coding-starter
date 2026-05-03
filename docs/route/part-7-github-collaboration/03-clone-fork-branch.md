@@ -104,7 +104,7 @@ git status
 
 この3つを見てから作業します。
 
-## AIに聞いてよいこと
+## AIに聞いてみよう
 
 ```text
 git remote -v、git branch、git status の結果を見て、

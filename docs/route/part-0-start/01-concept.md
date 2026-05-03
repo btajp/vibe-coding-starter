@@ -83,7 +83,7 @@ AIに相談するときは、実行したコマンド、表示されたエラー
 
 ![Vibe Codingでまず確認すること](../../images/vibe-coding-safety-checks.png)
 
-## AIに聞いてよいこと
+## AIに聞いてみよう
 
 この章の時点では、まだ教材リポジトリをcloneしていません。
 CodexやClaude Codeを使える状態にもなっていないかもしれません。

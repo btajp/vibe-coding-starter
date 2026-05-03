@@ -93,7 +93,7 @@ git log --oneline -n 5
 
 どこへ何を送るのかを説明できない状態でpushしないでください。
 
-## AIに聞いてよいこと
+## AIに聞いてみよう
 
 ```text
 git status、git remote -v、git log --oneline -n 5 の結果を見て、
