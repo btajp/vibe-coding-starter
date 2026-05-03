@@ -34,6 +34,7 @@ GitHubへ送る操作は、後の部で扱います。
 ## 第0部のcloneを思い出す
 
 第0部では、教材リポジトリをcloneしました。
+第1部では、[GitHubからcloneした状態を理解する](../part-1-pc-os-cli/08-understand-clone.md) で、教材リポジトリの場所とリモートURLを確認しました。
 
 ```bash
 git clone リポジトリURL
