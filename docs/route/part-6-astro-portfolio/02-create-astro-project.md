@@ -56,7 +56,11 @@ npm --version
 
 ```bash
 cd ~/vibe-projects
+ls
 ```
+
+`vibe-portfolio` がすでに表示される場合は、削除せずに止まります。
+以前に作りかけた成果物リポジトリかもしれません。
 
 Astroプロジェクトを作ります。
 
@@ -67,6 +71,7 @@ npm create astro@latest vibe-portfolio
 画面の質問は、Astroのバージョンによって少し変わることがあります。
 迷ったら、次の方針で選びます。
 
+- パッケージの一時インストールを聞かれたらYes
 - 最小構成に近いテンプレートを選ぶ
 - 依存関係のインストールはYes
 - TypeScriptは使ってよい
@@ -135,9 +140,21 @@ git status
 ```
 
 プロジェクト作成時にまだcommitされていない場合は、初期状態をcommitします。
+ここでは、作成直後の初期状態をまとめて記録するために `git add .` を使います。
+ただし、実行前に `git status` で `node_modules` がcommit候補に入っていないことを必ず確認します。
 
 ```bash
 git add .
+git status
+git diff --staged --stat
+```
+
+`git diff --staged --stat` は、次のcommitに入るファイルの概要を見るコマンドです。
+大量に生成されたファイルを1つずつ読む代わりに、まず全体像を見ます。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Create Astro portfolio"
 ```
 
