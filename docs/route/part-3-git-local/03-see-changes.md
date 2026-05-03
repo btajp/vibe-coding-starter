@@ -86,6 +86,8 @@ git diff
 
 ただし、未追跡ファイルだけの場合、`git diff` に中身が出ないことがあります。
 これは、まだGitが比較対象として扱っていないためです。
+この場合、`git diff` が空でも失敗ではありません。
+まずは `git status` の未追跡ファイル表示を確認します。
 
 次の章で `git add` を扱うと、差分の見え方も変わります。
 
@@ -130,4 +132,3 @@ git status と git diff の結果を貼ります。
 次は、変更を選んでcommitします。
 
 - [04-stage-and-commit.md](04-stage-and-commit.md)
-
