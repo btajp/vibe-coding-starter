@@ -90,9 +90,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v6
+        uses: actions/checkout@v5
       - name: Install, build, and upload your site
-        uses: withastro/action@v6
+        uses: withastro/action@v5
 
   deploy:
     needs: build
@@ -103,7 +103,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
 EOF
 ```
 
