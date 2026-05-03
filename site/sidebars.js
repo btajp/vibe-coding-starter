@@ -205,6 +205,7 @@ const sidebars = {
             'advanced/part-2-agents-md/minimal-agents-md',
             'advanced/part-2-agents-md/compare-before-after-agents-md',
             'advanced/part-2-agents-md/ask-ai-to-improve-agents-md',
+            'advanced/part-2-agents-md/prevent-agents-md-bloat',
           ],
         },
         'advanced/part-3-context-window-notes/index',

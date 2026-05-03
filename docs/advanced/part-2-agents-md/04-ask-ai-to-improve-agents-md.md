@@ -164,3 +164,5 @@ AGENTS.mdは、AIの失敗や人間の好みを、次回以降の作業方針に
 ## 次へ
 
 次は、AGENTS.mdの肥大化を防ぎます。
+
+- [AGENTS.mdの肥大化を防ぐ](05-prevent-agents-md-bloat.md)
