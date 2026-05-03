@@ -22,6 +22,8 @@ DOMは、JavaScriptからHTML要素を操作するための入口だと考えて
 - `textContent`
 - `classList`
 
+![DOMで要素を見つけ、イベントで操作に反応し、画面を更新する流れ](../../images/route-browser-basics/dom-event-flow.png)
+
 ## 現在のJavaScriptを読む
 
 `app.js` は次のような内容です。
