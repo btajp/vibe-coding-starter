@@ -22,11 +22,14 @@ title: 進め方を決める
 
 この教材の本線では、次のどちらかで進めます。
 
-- macOS
-- Windows / WSL Ubuntu
+- macOS 26 Tahoe 以上 / Apple Siliconチップ搭載Mac
+- Windows 11 / x86_64（Intel / AMD 64bit）PC / WSL Ubuntu
 
 Windowsだけで、PowerShellやコマンドプロンプトを使って進める手順は本線では扱いません。
 Windowsの人は、WSL Ubuntuを用意して、Ubuntu側のターミナルで作業します。
+
+Intel Mac、macOS 25 以前、Windows 10、ARM版Windowsでも近い手順で進められる場合があります。
+ただし、この教材の本線では扱いません。
 
 この教材では、macOSとWSL Ubuntuを横並びで扱います。
 どちらか一方だけを正解にするのではなく、似ているところと違うところを見ながら進めます。
@@ -82,27 +85,6 @@ WSL Ubuntuでは、Windows側のファイルとUbuntu側のファイルの両方
 - パスワードやトークンをAIに貼らない
 
 ![コマンドは一歩ずつ実行する](../../images/route-start/command-rules.png)
-
-## 詰まったときの聞き方
-
-第0部の途中では、まだCodexやClaude Codeを使えないことがあります。
-その場合は、Web版のChatGPT、Claude、Geminiなどに相談して構いません。
-
-相談するときは、次の情報を入れると答えが安定します。
-
-```text
-私はAIコーディングエージェントを使い始める準備をしています。
-OSはmacOSです。
-今いる場所は /Users/自分の名前 です。
-次のコマンドを実行したら、このエラーが出ました。
-
-ここから何を確認すればよいですか？
-```
-
-貼ってよいものは、実行したコマンド、エラー文、OS、今いるディレクトリです。
-貼ってはいけないものは、パスワード、APIキー、トークン、秘密鍵、ログイン認証コードです。
-
-![詰まったら、状況ごと相談する](../../images/route-start/ask-ai-with-context.png)
 
 ## 次へ
 

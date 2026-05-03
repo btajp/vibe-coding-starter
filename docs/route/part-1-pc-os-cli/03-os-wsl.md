@@ -16,8 +16,8 @@ title: macOS、Windows、WSL Ubuntuの関係を整理する
 
 この教材の本線では、次のどちらかで進めます。
 
-- macOS
-- Windows / WSL Ubuntu
+- macOS 26 Tahoe 以上 / Apple Siliconチップ搭載Mac
+- Windows 11 / x86_64（Intel / AMD 64bit）PC / WSL Ubuntu
 
 Windowsだけで、PowerShellやコマンドプロンプトを使って進める手順は本線では扱いません。
 Windowsの人は、Windowsの中にWSL UbuntuというLinux環境を用意し、Ubuntu側のターミナルで作業します。
@@ -143,7 +143,7 @@ Windowsの人は、似た名前の画面がいくつか出てきます。
 PowerShellは、Windows側のシェルです。
 第0部では、WSL Ubuntuをインストールするために使いました。
 
-Windows Terminalは、ターミナルアプリです。
+Windows Terminalは、Windows 11では「ターミナル」と表示されるターミナルアプリです。
 その中でPowerShellを開くことも、Ubuntuを開くこともできます。
 
 Ubuntuターミナルは、WSL Ubuntu側のシェルを使う画面です。

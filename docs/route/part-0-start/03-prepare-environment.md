@@ -26,7 +26,8 @@ title: 最低限の道具を入れる
 相談するときは、次の情報を入れると答えが安定します。
 
 ```text
-私はmacOSでこの教材を進めています。
+私はAIコーディングエージェントを使い始める準備をしています。
+OSはmacOSです。
 今いる場所は /Users/自分の名前 です。
 次のコマンドを実行したら、このエラーが出ました。
 
@@ -117,21 +118,54 @@ npm --version
 ## Windows / WSL Ubuntuの場合
 
 Windowsの人は、WSL Ubuntuを使います。
+この教材の本線では、Windows 11のx86_64（Intel / AMD 64bit）PCを前提にします。
 
-PowerShellでWSL Ubuntuをまだ入れていない場合は、Microsoft公式ドキュメントを確認します。
+Windows 11には、最初から「ターミナル」というアプリが入っています。
+スタートメニューで「ターミナル」を探し、右クリックして「管理者として実行」を選びます。
+
+まず、PowerShellでWSL Ubuntuをまだ入れていない場合は、Microsoft公式ドキュメントを確認します。
 
 - https://learn.microsoft.com/windows/wsl/install
 
-PowerShellで次を実行します。
+管理者として開いたターミナルでは、通常はPowerShellが開きます。
+PowerShellが開いていることを確認してから、次を実行します。
+このコマンドは、WSLに必要なWindowsの機能を有効にし、標準のUbuntuをインストールします。
+
+![Windows 11でターミナルを管理者として開く](../../images/route-start/windows-terminal-admin.png)
 
 ```powershell
-wsl --install -d Ubuntu
+wsl --install
 ```
 
-インストール後、PCの再起動を求められたら再起動します。
-その後、Ubuntuを起動し、ユーザー名とパスワードを作成します。
+PCの再起動を求められたら、再起動します。
 
-Ubuntuのターミナルで、今いる場所を確認します。
+### ターミナルを通常の権限で開き直す
+
+WSLのインストールが終わったら、管理者として開いていたターミナルのウィンドウを閉じます。
+ここから先の作業では、管理者権限のターミナルを使いません。
+
+次に、スタートメニューから「ターミナル」をもう一度開きます。
+このときは右クリックせず、普通にクリックして開きます。
+「管理者として実行」は選びません。
+
+ターミナルを開くと、PowerShellが開くことがあります。
+インストールされたことをPowerShell側で確認したい場合は、次を実行します。
+
+```powershell
+wsl --list --verbose
+```
+
+`Ubuntu` が表示されれば、WSL Ubuntuが入っています。
+
+次に、タブの右側にある下向きのメニューを開き、`Ubuntu` を選びます。
+
+![ターミナルのタブメニューからUbuntuを開く](../../images/route-start/windows-terminal-open-ubuntu.png)
+
+Ubuntuを初めて開いたときは、Ubuntu内で使うユーザー名とパスワードの作成を求められます。
+Windowsのユーザー名やパスワードと同じにする必要はありません。
+
+ここから先は、管理者権限のPowerShellではなく、通常のUbuntu側ターミナルで作業します。
+まず、今いる場所を確認します。
 
 ```bash
 pwd
@@ -153,13 +187,16 @@ sudo apt update
 sudo apt install -y zsh git bash gawk sed curl build-essential procps file bubblewrap
 ```
 
+Ubuntuでは `gawk` をインストールします。
+`gawk` はGNU版の `awk` で、インストール後は `awk` という名前でも使えます。
+
 確認します。
 
 ```bash
 zsh --version
 git --version
 bash --version
-gawk --version
+awk --version
 sed --version
 curl --version
 ```
@@ -211,37 +248,6 @@ chsh -s "$(command -v bash)"
 
 まだAIエージェントが使えない場合は、Web版のAIに相談します。
 ただし、パスワード、トークン、APIキー、秘密鍵、ログイン認証コードは貼らないでください。
-
-## AIに聞いてよいこと
-
-Web版のAIに聞くときは、「この教材では」とだけ書かないようにします。
-AIはこのページの前後関係を知らないかもしれないため、自分の目的、OS、実行したコマンド、出た表示を一緒に渡します。
-WSL Ubuntuで進めている人は、例の `macOS` を `Windows / WSL Ubuntu` に置き換えてください。
-
-```text
-私はAIコーディングエージェントを使い始める準備をしています。
-OSはmacOSです。
-
-Homebrew、Git、Node.js、npmという名前が出てきました。
-今は詳しい仕組みではなく、それぞれが何のための道具なのかだけを初心者向けに短く説明してください。
-あわせて、それぞれが入っているか確認するコマンドも教えてください。
-```
-
-```text
-私はAIコーディングエージェントを使い始める準備をしています。
-OSはmacOSです。
-
-次のコマンドを実行しました。
-
-ここに実行したコマンドを貼る
-
-次のエラーが出ました。
-
-ここにエラー文を貼る
-
-パスワード、APIキー、トークン、秘密鍵、ログイン認証コードは貼っていません。
-このエラーの原因として考えられることと、次に確認するコマンドを教えてください。
-```
 
 ## 次へ
 
