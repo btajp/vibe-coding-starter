@@ -71,10 +71,13 @@ Vibe Codingの学習過程をまとめるためのポートフォリオです。
 
 AIに下書きを頼んでも構いません。
 ただし、公開してよい内容かは自分で確認します。
+Astroが作ったREADMEがすでにある場合は、いきなり上書きせず、今の内容を読んでから編集します。
 
 ## 学習ログを作る
 
 `docs/learning-log.md` を作ります。
+このコマンドは `docs/learning-log.md` を上書きします。
+すでに同名ファイルがある場合は、中身を確認してから進めます。
 
 ```bash
 mkdir -p docs
@@ -113,6 +116,18 @@ src/pages/index.astro をポートフォリオ用に編集したいです。
 ```
 
 計画を見て、問題なければ小さく編集を頼みます。
+
+```text
+計画に問題ありません。
+まずは src/pages/index.astro だけを編集してください。
+
+条件:
+- README.md と docs/learning-log.md は変更しない
+- 学習ログへのリンクを入れる
+- 公開してはいけない個人情報や秘密情報は入れない
+- 変更前に、変更予定ファイルと理由を説明する
+- 変更後に、確認すべき点を箇条書きで出す
+```
 
 ## 何が起きたのか
 
@@ -161,6 +176,15 @@ git diff
 
 ```bash
 git add README.md docs/learning-log.md src/pages/index.astro
+git status
+git diff --staged
+```
+
+公開したくない個人情報や秘密情報が入っていないことを確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add portfolio content"
 ```
 
@@ -169,4 +193,3 @@ git commit -m "Add portfolio content"
 次は、buildして公開前レビューをします。
 
 - [06-build-and-review.md](06-build-and-review.md)
-
