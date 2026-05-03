@@ -25,6 +25,8 @@ title: ローカルサーバーとTypeScriptの入口
 → http://localhost:ポート番号 で見る
 ```
 
+![file、localhost、TypeScriptの位置づけを整理する](../../images/route-browser-basics/localhost-typescript-map.png)
+
 ## ローカルサーバーを起動する
 
 Python 3が入っている場合は、次で簡単なローカルサーバーを起動できます。
