@@ -102,5 +102,4 @@ git diff
 
 次は、GitHub Pagesで公開・運用する部に進みます。
 
-- [シラバスに戻る](../index.md)
-
+- [第8部：GitHub Pagesで公開・運用する](../part-8-publish-pages/index.md)

@@ -115,5 +115,4 @@ git log --oneline
 
 次は、GitHubで共同作業を体験する部に進みます。
 
-- [シラバスに戻る](../index.md)
-
+- [第7部：GitHubで共同作業を体験する](../part-7-github-collaboration/index.md)

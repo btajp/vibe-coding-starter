@@ -145,5 +145,4 @@ git status
 
 次は、Astroで成果物ポートフォリオを作る部に進みます。
 
-- [シラバスに戻る](../index.md)
-
+- [第6部：Astroで成果物ポートフォリオを作る](../part-6-astro-portfolio/index.md)

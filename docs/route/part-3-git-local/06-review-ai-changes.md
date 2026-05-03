@@ -144,5 +144,4 @@ git status
 
 次は、ローカルだけで小さく自動化する部に進みます。
 
-- [シラバスに戻る](../index.md)
-
+- [第4部：ローカルだけで小さく自動化する](../part-4-local-automation/index.md)

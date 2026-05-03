@@ -170,5 +170,4 @@ git status
 
 次は、ブラウザで小さく作る部に進みます。
 
-- [シラバスに戻る](../index.md)
-
+- [第5部：ブラウザで小さく作る](../part-5-browser-basics/index.md)
