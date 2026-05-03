@@ -32,6 +32,8 @@ public/
 プロジェクトのテンプレートによって、最初からあるディレクトリは違う場合があります。
 なければ、必要になったときに作ります。
 
+![Astroでよく見るsrc/pages、src/components、publicの役割](../../images/route-astro-portfolio/astro-file-structure-map.png)
+
 まずAstroプロジェクトの中にいることを確認します。
 
 ```bash
