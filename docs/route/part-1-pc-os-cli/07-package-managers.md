@@ -142,6 +142,12 @@ sudo npm install -g ...
 - `npm config get prefix` の結果
 - Homebrewで入れたNode.jsを使えているか
 
+`npm config get prefix` は、`npm install -g` で入るコマンドがどの場所に置かれるかを確認するコマンドです。
+たとえば、Homebrewで入れたNode.jsを使っているなら、macOSでは `/opt/homebrew/...`、WSL Ubuntuでは `/home/linuxbrew/.linuxbrew/...` のような場所が関係することがあります。
+
+ここで大切なのは、表示されたパスを見て「自分のユーザーで扱える場所か」「今使っているNode.js / npmとつながっている場所か」を確認することです。
+表示結果だけで判断しきれない場合は、AIにその3つの確認結果を渡して、まだ変更せずに状況を整理してもらいます。
+
 この教材では、反射的に `sudo` を付けるのではなく、原因を切り分けます。
 
 インストールや権限まわりで迷ったときは、リファレンスの [安全な操作の基本](../../reference/safety-basics.md) も確認できます。
