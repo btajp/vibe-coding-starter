@@ -83,6 +83,16 @@ git status
 
 ```bash
 git add .gitignore
+git status
+git diff --staged
+```
+
+`git status` で、`.gitignore` だけがcommit候補になっているか確認します。
+`git diff --staged` で、次のcommitに入る内容が `.env` ではなく、`.gitignore` の設定行だけか確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Ignore environment files"
 ```
 
@@ -146,4 +156,3 @@ git status
 次は、AIが変えた内容をレビューします。
 
 - [06-review-ai-changes.md](06-review-ai-changes.md)
-
