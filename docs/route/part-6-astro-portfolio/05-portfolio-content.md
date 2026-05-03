@@ -23,6 +23,8 @@ Astroのトップページ、README、学習ログを、自分の成果物とし
 
 AIが作った文章でも、公開するのは自分です。
 
+![ポートフォリオに入れる内容と出してはいけない情報を分ける](../../images/route-astro-portfolio/portfolio-content-public-boundary.png)
+
 ## 入れる内容を決める
 
 最初のポートフォリオには、次の程度で十分です。
