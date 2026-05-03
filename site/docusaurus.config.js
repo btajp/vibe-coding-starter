@@ -49,7 +49,12 @@ const config = {
         {
           to: '/route',
           position: 'left',
-          label: 'シラバス',
+          label: '基本編',
+        },
+        {
+          to: '/advanced',
+          position: 'left',
+          label: '発展編',
         },
         {
           to: '/reference',
@@ -74,8 +79,12 @@ const config = {
               to: '/',
             },
             {
-              label: 'シラバス',
+              label: '基本編',
               to: '/route',
+            },
+            {
+              label: '発展編',
+              to: '/advanced',
             },
             {
               label: 'リファレンス',

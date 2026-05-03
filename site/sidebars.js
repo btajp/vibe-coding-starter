@@ -5,7 +5,7 @@ const sidebars = {
     'index',
     {
       type: 'category',
-      label: '学習ルート',
+      label: '基本編',
       collapsed: false,
       items: [
         'route/index',
@@ -168,6 +168,24 @@ const sidebars = {
             'route/part-8-publish-pages/graduation-review',
           ],
         },
+      ],
+    },
+    {
+      type: 'category',
+      label: '発展編',
+      collapsed: false,
+      items: [
+        'advanced/index',
+        'advanced/part-1-ai-work-environment/index',
+        'advanced/part-2-agents-md/index',
+        'advanced/part-3-context-window-notes/index',
+        'advanced/part-4-prompt-templates/index',
+        'advanced/part-5-skills/index',
+        'advanced/part-6-safety-checks/index',
+        'advanced/part-7-ai-review/index',
+        'advanced/part-8-subagents/index',
+        'advanced/part-9-long-tasks/index',
+        'advanced/part-10-ai-dev-environment/index',
       ],
     },
     {
