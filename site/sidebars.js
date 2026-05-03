@@ -192,7 +192,18 @@ const sidebars = {
             'advanced/part-1-ai-work-environment/review-ai-work-environment',
           ],
         },
-        'advanced/part-2-agents-md/index',
+        {
+          type: 'category',
+          label: '発展編 第2部：AGENTS.mdを育てる',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'advanced/part-2-agents-md/index',
+          },
+          items: [
+            'advanced/part-2-agents-md/agents-md-role',
+          ],
+        },
         'advanced/part-3-context-window-notes/index',
         'advanced/part-4-prompt-templates/index',
         'advanced/part-5-skills/index',

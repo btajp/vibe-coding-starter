@@ -170,4 +170,4 @@ AIは、会話の中で与えられた情報、見えるファイル、ツール
 
 次は、リポジトリごとの作業方針をAGENTS.mdに書きます。
 
-- [第2部：AGENTS.mdを育てる](../part-2-agents-md/index.md)
+- [AGENTS.mdの役割を確認する](../part-2-agents-md/01-agents-md-role.md)
