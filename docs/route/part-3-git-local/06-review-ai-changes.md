@@ -81,6 +81,16 @@ git restore memo.txt
 
 ```bash
 git add memo.txt
+git status
+git diff --staged
+```
+
+`git status` で、`memo.txt` だけがcommit候補になっているか確認します。
+`git diff --staged` で、次のcommitに入る内容が意図した1行だけか確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add review reminder"
 ```
 
