@@ -25,6 +25,7 @@ reviews/YOUR_GITHUB_USERNAME.md
 ```
 
 `YOUR_GITHUB_USERNAME` は自分のGitHubユーザー名に置き換えます。
+同じ名前のファイルがすでにある場合は、上書きせずに止まります。
 
 ## 感想ファイルを作る
 
@@ -39,6 +40,8 @@ git status
 感想ファイルを作ります。
 
 ```bash
+mkdir -p reviews
+ls reviews
 cat > reviews/YOUR_GITHUB_USERNAME.md <<'EOF'
 # YOUR_GITHUB_USERNAME
 
@@ -57,6 +60,8 @@ EOF
 ```
 
 ファイル名と見出しの `YOUR_GITHUB_USERNAME` は、自分のGitHubユーザー名に置き換えます。
+このコマンドは同じ名前のファイルを上書きします。
+`ls reviews` で同じファイル名が表示されていた場合は、`cat > ...` を実行せずに止まります。
 
 ## 公開前に読む
 
@@ -91,6 +96,15 @@ git diff
 
 ```bash
 git add reviews/YOUR_GITHUB_USERNAME.md
+git status
+git diff --staged
+```
+
+新規の感想ファイル1つだけがcommit候補になっていることを確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add review from YOUR_GITHUB_USERNAME"
 ```
 
@@ -141,4 +155,3 @@ commit済みで作業ツリーがcleanなら、次へ進みます。
 次は、pushしてPull Requestを作ります。
 
 - [05-push-and-pr.md](05-push-and-pr.md)
-
