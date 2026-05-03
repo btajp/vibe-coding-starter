@@ -25,6 +25,8 @@ pwd
 
 `vibe-coding-starter` ではなく、`vibe-portfolio` の中にいることを確認します。
 
+![ローカルのAstro成果物に対応するGitHubリポジトリを作る流れ](../../images/route-publish-pages/create-github-repo-flow.png)
+
 ## リポジトリ名を決める
 
 この教材では、例として次の名前を使います。
