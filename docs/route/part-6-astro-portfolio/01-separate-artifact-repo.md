@@ -36,9 +36,12 @@ title: 成果物リポジトリを分ける
 mkdir -p ~/vibe-projects
 cd ~/vibe-projects
 pwd
+ls
 ```
 
 ここに `vibe-portfolio` というプロジェクトを作る予定です。
+`ls` で、すでに `vibe-portfolio` がある場合は削除せずに止まります。
+以前に作りかけた成果物リポジトリかもしれません。
 
 ## なぜ分けるのか
 
@@ -87,6 +90,7 @@ pwd
 ここで初めて、成果物リポジトリを実際に作る段階に入ります。
 
 前の部で練習用リポジトリを分けたのは、この判断を自然にするためでもあります。
+置き場所の考え方を詳しく確認したい場合は、リファレンスの [リポジトリの置き場所](../../reference/repository-layout.md) を見ます。
 
 ## 運用者の視点
 
@@ -122,4 +126,3 @@ commitは不要です。
 次は、Astroプロジェクトを作ります。
 
 - [02-create-astro-project.md](02-create-astro-project.md)
-
