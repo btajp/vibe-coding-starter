@@ -189,6 +189,7 @@ const sidebars = {
             'advanced/part-1-ai-work-environment/ai-work-environment-parts',
             'advanced/part-1-ai-work-environment/ai-context-allow-deny',
             'advanced/part-1-ai-work-environment/verify-before-after',
+            'advanced/part-1-ai-work-environment/review-ai-work-environment',
           ],
         },
         'advanced/part-2-agents-md/index',
