@@ -132,6 +132,24 @@ const sidebars = {
             'route/part-6-astro-portfolio/finish-with-ai-and-git',
           ],
         },
+        {
+          type: 'category',
+          label: '第7部：GitHubで共同作業を体験する',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-7-github-collaboration/index',
+          },
+          items: [
+            'route/part-7-github-collaboration/public-github',
+            'route/part-7-github-collaboration/star-and-fork',
+            'route/part-7-github-collaboration/clone-fork-branch',
+            'route/part-7-github-collaboration/add-review-file',
+            'route/part-7-github-collaboration/push-and-pr',
+            'route/part-7-github-collaboration/review-and-merge',
+            'route/part-7-github-collaboration/github-review',
+          ],
+        },
       ],
     },
     {
