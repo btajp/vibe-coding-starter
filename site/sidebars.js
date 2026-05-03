@@ -182,6 +182,7 @@ const sidebars = {
         'reference/glossary',
         'reference/commands-cheatsheet',
         'reference/troubleshooting',
+        'reference/os-basics',
         'reference/macos-vs-wsl',
         'reference/macos-gnu-userland',
         'reference/repository-layout',

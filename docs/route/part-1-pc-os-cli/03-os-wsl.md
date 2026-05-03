@@ -30,6 +30,38 @@ Windows PC
        └─ この教材の作業場所
 ```
 
+## OSとは何か
+
+OSは、PC全体を動かす土台になるソフトウェアです。
+画面を表示したり、ファイルを保存したり、キーボードからの入力を受け取ったり、アプリを起動したりします。
+
+macOSやWindowsは、PCで使われるOSです。
+LinuxもOSの一種ですが、いろいろな形にまとめられて配布されています。
+Ubuntuは、そのLinuxを使いやすくまとめたものの1つです。
+
+UNIXは、macOSやLinuxに近い考え方のもとになっている古いOSの系統です。
+この章では、歴史や細かい分類を覚える必要はありません。
+まずは、次のように考えます。
+
+```text
+macOS
+→ Mac本体で動くOS
+
+Windows
+→ Windows PC本体で動くOS
+
+Linux
+→ サーバーや開発環境でよく使われるOSの系統
+
+Ubuntu
+→ Linuxを使いやすい形にまとめたもの
+
+WSL
+→ Windows上でLinux環境を使うための仕組み
+```
+
+詳しい関係は、リファレンスの [OS、UNIX、Linux、Windowsの基本](../../reference/os-basics.md) で確認できます。
+
 ## macOSの場合
 
 macOSの人は、macOS上のターミナルで作業します。
@@ -40,8 +72,8 @@ macOSの人は、macOS上のターミナルで作業します。
 /Users/あなたのユーザー名/src/github.com/btajp/vibe-coding-starter
 ```
 
-macOSは、UNIX系の考え方を持つOSです。
-そのため、Linuxでよく使われる考え方と似ている部分があります。
+macOSのターミナルでは、Linuxと似た形でパスやコマンドを扱えます。
+たとえば `/Users/...` のようなパスや、`pwd`、`ls`、`cd` などのコマンドを使います。
 
 ただし、macOSの標準コマンドはLinuxと完全に同じではありません。
 その違いを少なくするために、第0部ではHomebrewで `bash`、`gawk`、`gnu-sed` なども入れました。
@@ -53,7 +85,8 @@ macOSは、UNIX系の考え方を持つOSです。
 Windowsの人は、Windowsの中にWSL Ubuntuを用意しました。
 
 WSLは、Windows上でLinux環境を使うための仕組みです。
-Ubuntuは、Linuxの代表的な配布形態の1つです。
+Ubuntuは、Linuxを実際に使いやすい形にまとめたものの1つです。
+このようなまとまりを、ディストリビューションと呼ぶことがあります。
 この教材では、WSLで使うLinux環境としてUbuntuを選んでいます。
 
 第0部では、PowerShellで次のコマンドを実行しました。
@@ -236,13 +269,6 @@ macOS、Windows、WSL Ubuntu、Linux、UNIXの関係を、
 
 詳しい歴史ではなく、どのターミナルで作業するべきかがわかる説明にしてください。
 ```
-
-## commitポイント
-
-この章では、教材リポジトリのファイルを編集する必要はありません。
-作業場所を確認するだけならcommitは不要です。
-
-AIに環境の説明を頼む場合も、ファイル変更を許可していなければcommitは不要です。
 
 ## 次へ
 

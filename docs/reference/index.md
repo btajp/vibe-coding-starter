@@ -26,6 +26,7 @@ title: リファレンス
 - [用語集](glossary.md)
 - [コマンド早見表](commands-cheatsheet.md)
 - [トラブルシューティング](troubleshooting.md)
+- [OS、UNIX、Linux、Windowsの基本](os-basics.md)
 - [macOSとWSL Ubuntu](macos-vs-wsl.md)
 - [macOSとGNU系ツール](macos-gnu-userland.md)
 - [リポジトリ配置](repository-layout.md)
