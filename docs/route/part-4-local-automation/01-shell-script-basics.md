@@ -68,6 +68,13 @@ EOF
 
 `cat > ファイル <<'EOF'` は、`EOF` までの内容をファイルに書き込む方法です。
 長い設定ファイルやスクリプトを作るときに使われます。
+`>` は上書きなので、同じ名前のファイルがすでにある場合は中身が置き換わります。
+ここでは新しく練習用スクリプトを作るために使っています。
+
+`#!/usr/bin/env bash` は、このファイルをbashで実行するための目印です。
+`set -euo pipefail` は、スクリプト内のミスに早めに気づくための設定です。
+この章では細かく暗記しなくて構いません。
+「失敗に気づきやすくするための安全寄りの設定」だと考えてください。
 
 ## 実行してみる
 
@@ -123,6 +130,16 @@ git diff
 
 ```bash
 git add scripts/daily-note.sh logs/daily-note.log
+git status
+git diff --staged
+```
+
+`logs/daily-note.log` には実行時刻が入るため、表示内容は人によって少し違います。
+次のcommitに入るファイルが、作ったスクリプトと練習用ログだけか確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add daily note script"
 ```
 
@@ -131,4 +148,3 @@ git commit -m "Add daily note script"
 次は、実行権限とPATHを体験します。
 
 - [02-executable-and-path.md](02-executable-and-path.md)
-
