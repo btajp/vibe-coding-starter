@@ -27,6 +27,8 @@ Go
 → 小さなCLIツールや配布しやすい実行ファイルを作りやすい
 ```
 
+![Go CLIの作り方](../../images/route-local-automation/go-run-build-flow.png)
+
 ## Goをインストールする
 
 すでに入っているか確認します。
