@@ -33,6 +33,22 @@ git branch
 - `origin` が自分のforkか
 - 作業branchにいるか
 
+`git branch` の表示では、`*` が付いている行が今いるbranchです。
+`add-review-YOUR_GITHUB_USERNAME` のような作業branchにいることを確認します。
+
+不安な場合は、ここでAIに確認を頼みます。
+
+```text
+Pull Requestを作る前に確認したいです。
+
+git status、git log --oneline -n 3、git remote -v、git branch の結果を見て、
+pushしてよい状態か確認してください。
+
+originが自分のforkであること、作業branchにいること、
+感想ファイル追加のcommitがあることを確認したいです。
+まだ git push やPR作成は実行しないでください。
+```
+
 ## forkへpushする
 
 ```bash
@@ -40,6 +56,7 @@ git push -u origin add-review-YOUR_GITHUB_USERNAME
 ```
 
 `YOUR_GITHUB_USERNAME` は、自分のbranch名に合わせます。
+`git branch` で表示された実際のbranch名を使います。
 
 認証を求められたら、GitHubの案内に従います。
 トークン、認証コード、秘密鍵をAIに貼ってはいけません。
@@ -58,6 +75,7 @@ head repository
 → YOUR_GITHUB_USERNAME/vibe-coding-starter
 ```
 
+base branchは元リポジトリ側の `main`、head branchは自分の作業branchになるように確認します。
 変更ファイルが `reviews/YOUR_GITHUB_USERNAME.md` だけか確認します。
 
 PR本文には、公開してよい範囲で短く書きます。
@@ -100,13 +118,14 @@ GitHub上のPR画面で差分を見られるので、そこでも確認します
 ## AIに聞いてみよう
 
 ```text
-Pull Requestを作る前に確認したいです。
+forkへのpush後、Pull Requestを作る前に確認したいです。
 
 git status、git log --oneline -n 3、git remote -v、git branch の結果と、
 PR画面の変更ファイル一覧を見て、
 送ってよい状態か確認してください。
 
-まだ git push やPR作成は実行しないでください。
+git push は済んでいます。
+まだPR作成ボタンは押さないでください。
 ```
 
 ## commitポイント
@@ -119,4 +138,3 @@ push後は、GitHub上のPR URLを控えておきます。
 次は、reviewとmergeの流れを見ます。
 
 - [06-review-and-merge.md](06-review-and-merge.md)
-
