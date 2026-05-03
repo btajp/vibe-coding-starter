@@ -70,6 +70,10 @@ PATHを見ます。
 echo $PATH
 ```
 
+PATHは `:` で区切られた場所の一覧です。
+すべてを暗記する必要はありません。
+今は「シェルが左から順にコマンドを探す場所」だと考えてください。
+
 コマンドの場所を確認します。
 
 ```bash
@@ -105,6 +109,15 @@ echo $PATH
 ```
 
 入っていない場合は、zshの設定に追記します。
+同じ行を何度も追記しないために、まず既存の設定を探します。
+
+```bash
+grep -n 'HOME/bin' ~/.zshrc
+```
+
+`grep` は、ファイルの中から文字列を探すコマンドです。
+何も表示されなければ、まだ `~/bin` の設定はなさそうです。
+その場合だけ追記します。
 
 ```bash
 printf '\nexport PATH="$HOME/bin:$PATH"\n' >> ~/.zshrc
@@ -115,6 +128,9 @@ printf '\nexport PATH="$HOME/bin:$PATH"\n' >> ~/.zshrc
 ```bash
 source ~/.zshrc
 ```
+
+`source ~/.zshrc` は、zshの設定ファイルを今開いているターミナルに読み込み直すコマンドです。
+設定が不安な場合は、ターミナルを一度閉じて開き直しても構いません。
 
 確認します。
 
@@ -172,6 +188,16 @@ git diff
 
 ```bash
 git add scripts/daily-note.sh
+git status
+git diff --staged
+```
+
+権限変更は、差分では `100644` から `100755` のような数字の変化として表示されることがあります。
+ファイルの中身ではなく、「実行できるファイルになった」という情報がcommit対象になっています。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Make daily note script executable"
 ```
 
@@ -180,4 +206,3 @@ git commit -m "Make daily note script executable"
 次は、Goで小さなCLIを作ります。
 
 - [03-go-cli.md](03-go-cli.md)
-
