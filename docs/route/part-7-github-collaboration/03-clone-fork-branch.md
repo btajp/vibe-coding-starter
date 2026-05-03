@@ -21,13 +21,17 @@ title: forkをcloneし、作業branchを作る
 ```bash
 mkdir -p ~/vibe-practice/github-pr
 cd ~/vibe-practice/github-pr
+ls
 ```
 
 自分のforkをcloneします。
+`ls` で `vibe-coding-starter` がすでにある場合は、削除せずに止まります。
+以前にcloneしたPR練習用リポジトリかもしれません。
 
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/vibe-coding-starter.git
 cd vibe-coding-starter
+pwd
 ```
 
 `YOUR_GITHUB_USERNAME` は自分のGitHubユーザー名に置き換えます。
@@ -47,6 +51,9 @@ git remote add upstream https://github.com/btajp/vibe-coding-starter.git
 git remote -v
 ```
 
+`upstream` がすでに存在すると言われた場合は、追加済みです。
+その場合は `git remote -v` の表示を見て、URLが元の教材リポジトリになっているか確認します。
+
 ```text
 origin
 → 自分のfork
@@ -58,6 +65,7 @@ upstream
 ## commit用メールを設定する
 
 GitHubのメールプライバシー設定で確認した値を使います。
+ここでも、`YOUR_GITHUB_USERNAME` と `YOUR_GITHUB_NOREPLY_EMAIL` は必ず自分の値に置き換えます。
 
 ```bash
 git config user.name "YOUR_GITHUB_USERNAME"
@@ -125,4 +133,3 @@ commitは不要です。
 次は、感想ファイルを追加します。
 
 - [04-add-review-file.md](04-add-review-file.md)
-
