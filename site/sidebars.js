@@ -97,6 +97,23 @@ const sidebars = {
             'route/part-4-local-automation/review-automation',
           ],
         },
+        {
+          type: 'category',
+          label: '第5部：ブラウザで小さく作る',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-5-browser-basics/index',
+          },
+          items: [
+            'route/part-5-browser-basics/html-css-js-roles',
+            'route/part-5-browser-basics/create-local-page',
+            'route/part-5-browser-basics/dom-events',
+            'route/part-5-browser-basics/forms-and-console',
+            'route/part-5-browser-basics/localhost-and-typescript',
+            'route/part-5-browser-basics/review-browser-app',
+          ],
+        },
       ],
     },
     {
