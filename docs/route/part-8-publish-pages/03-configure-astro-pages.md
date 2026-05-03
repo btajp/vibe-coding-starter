@@ -29,6 +29,8 @@ cd ~/vibe-projects/vibe-portfolio
 pwd
 ```
 
+![Astroのsite、base、workflowをGitHub Pages向けに設定する](../../images/route-publish-pages/astro-pages-config-flow.png)
+
 ## astro.config.mjsを設定する
 
 `astro.config.mjs` を開きます。
@@ -168,6 +170,27 @@ workflowは、自動で実行される設定です。
 - どのActionを使うか
 - buildとdeployが分かれているか
 - 秘密情報をworkflowに直接書いていないか
+
+## 理解チェック
+
+AIに、AstroのPages設定を見分ける問題を出してもらいます。
+
+```text
+AstroをGitHub Pages向けに設定するときの役割を見分ける練習問題を出してください。
+
+次の条件でお願いします。
+
+- 問題は5問
+- 各問題は、A/B/Cから選ぶ選択式にする
+- 選択肢は、A: site、B: base、C: workflow、にする
+- 一問一答形式にする
+- 1問ずつ状況を表示し、その直下にA/B/Cの選択肢も毎回表示して、私の回答を待つ
+- 私は、各問題に対してA/B/Cだけで回答します
+- 私が回答するまで、その問題の答え、採点、解説を表示しないでください
+- 私が回答したあとで、その問題を採点し、理由も解説してください
+- 解説が終わったら、次の問題を1問だけ出してください
+- コマンドは実行しないでください
+```
 
 ## AIに聞いてみよう
 
