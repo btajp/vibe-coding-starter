@@ -16,6 +16,8 @@ title: ブラウザアプリをAIとGitで見直す
 最後に、AIとGitを使って見直します。
 第2部で学んだように、まずレビューを頼み、必要なら小さな変更だけを頼みます。
 
+![ブラウザアプリを画面、Console、Git差分でレビューする流れ](../../images/route-browser-basics/browser-app-review-flow.png)
+
 ## AIにレビューさせる
 
 次のように頼みます。
