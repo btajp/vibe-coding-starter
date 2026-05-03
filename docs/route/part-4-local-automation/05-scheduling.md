@@ -45,6 +45,8 @@ tail -n 5 logs/daily-note.log
 ## cronの入口
 
 WSL UbuntuやLinuxでは、cronを使うことがあります。
+WSL Ubuntuでは、環境によってcronが動いていない場合もあります。
+この章では、登録を必須にせず、形式と注意点を理解することを優先します。
 
 現在の設定を見るには次を使います。
 
@@ -57,12 +59,17 @@ crontab -l
 cronの設定例は次の形です。
 
 ```text
-* * * * * /home/あなたのユーザー名/vibe-practice/local-automation/scripts/daily-note.sh
+* * * * * cd /home/あなたのユーザー名/vibe-practice/local-automation && ./scripts/daily-note.sh
 ```
 
 これは毎分実行する例です。
 学習用に短く確認できますが、放置するとログが増え続けます。
 試す場合は、必ず止め方まで確認します。
+
+ここで `cd ... && ./scripts/daily-note.sh` としているのは、作業ディレクトリを固定するためです。
+`&&` は、左側のコマンドが成功したときだけ右側のコマンドを実行する書き方です。
+`daily-note.sh` は `logs/daily-note.log` という相対パスに追記します。
+定期実行では、ターミナルで手動実行したときと作業ディレクトリが違う場合があるため、先に練習用リポジトリへ移動してから実行します。
 
 ## cronを試す場合の止め方
 
@@ -169,4 +176,3 @@ cronやlaunchdは、それを決まったタイミングで実行する仕組み
 次は、自動化をAIとGitで見直します。
 
 - [06-review-automation.md](06-review-automation.md)
-
