@@ -13,6 +13,7 @@ title: フォームとConsoleエラーを見る
 
 ブラウザにはDevToolsがあります。
 その中のConsoleには、JavaScriptのエラーやログが表示されます。
+開き方はブラウザによって少し違いますが、右クリックして「検証」を選ぶか、`F12` キーで開けることが多いです。
 
 エラーが出たとき、AIに「動きません」とだけ言うより、Consoleのエラーを伝えるほうが具体的です。
 
@@ -30,10 +31,12 @@ title: フォームとConsoleエラーを見る
 ```
 
 全体の位置が不安なら、AIに「このHTMLのどこに追加すべきか、まだ編集せずに教えて」と聞いて構いません。
+追加後に `git diff` を見ると、どこに入ったか確認できます。
 
 ## JavaScriptで値を読む
 
 `app.js` に次を追加します。
+既存のクリック回数用コードの下に追加します。
 
 ```js
 const form = document.querySelector("#note-form");
@@ -62,7 +65,8 @@ form.addEventListener("submit", (event) => {
 `#note-output` を `#missing-output` に変えると、JavaScriptが要素を見つけられなくなります。
 
 ブラウザを再読み込みし、Consoleを見ます。
-エラーが出たら、元に戻します。
+エラーが出たら、`#missing-output` を `#note-output` に戻します。
+戻したあと、もう一度ブラウザを再読み込みして、エラーが消えたことを確認します。
 
 この練習の目的は、エラーを怖がらずに読むことです。
 
@@ -115,6 +119,15 @@ git diff
 
 ```bash
 git add index.html app.js
+git status
+git diff --staged
+```
+
+わざと作ったエラーが残っていないことを確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add note form"
 ```
 
@@ -123,4 +136,3 @@ git commit -m "Add note form"
 次は、ローカルサーバーとTypeScriptの入口を扱います。
 
 - [05-localhost-and-typescript.md](05-localhost-and-typescript.md)
-
