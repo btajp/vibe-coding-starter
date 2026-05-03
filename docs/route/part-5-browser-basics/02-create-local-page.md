@@ -24,7 +24,11 @@ cd ~/vibe-practice/browser-basics
 git init
 git config user.name "Vibe Coding Learner"
 git config user.email "learner@example.com"
+git status
 ```
+
+この章では、ここから3つのファイルを新しく作ります。
+`cat > ファイル <<'EOF'` は上書きなので、すでに同じ名前のファイルがある場合は、実行前に中身を確認してから進めます。
 
 ## HTMLを作る
 
@@ -112,6 +116,13 @@ open index.html
 
 WSL Ubuntuでは、Windows側のブラウザでファイルを開く方法が環境によって異なります。
 無理にコマンドで開かず、ファイルマネージャーやブラウザから開いて構いません。
+WSL UbuntuからWindowsのエクスプローラーで現在のディレクトリを開ける場合は、次も使えます。
+
+```bash
+explorer.exe .
+```
+
+開いたフォルダで `index.html` をダブルクリックします。
 
 ## 何が起きたのか
 
@@ -160,6 +171,15 @@ git diff
 
 ```bash
 git add index.html styles.css app.js
+git status
+git diff --staged
+```
+
+3ファイルだけがcommit候補になっているか確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add local browser page"
 ```
 
@@ -168,4 +188,3 @@ git commit -m "Add local browser page"
 次は、DOMとイベントで画面を動かします。
 
 - [03-dom-events.md](03-dom-events.md)
-
