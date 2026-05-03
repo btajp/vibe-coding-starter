@@ -150,6 +150,24 @@ const sidebars = {
             'route/part-7-github-collaboration/github-review',
           ],
         },
+        {
+          type: 'category',
+          label: '第8部：GitHub Pagesで公開・運用する',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-8-publish-pages/index',
+          },
+          items: [
+            'route/part-8-publish-pages/create-github-repo',
+            'route/part-8-publish-pages/connect-remote-push',
+            'route/part-8-publish-pages/configure-astro-pages',
+            'route/part-8-publish-pages/enable-pages-actions',
+            'route/part-8-publish-pages/actions-troubleshooting',
+            'route/part-8-publish-pages/operate-published-site',
+            'route/part-8-publish-pages/graduation-review',
+          ],
+        },
       ],
     },
     {
