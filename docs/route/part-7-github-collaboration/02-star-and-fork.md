@@ -45,6 +45,8 @@ Gitのcommitも発生しません。
 次にforkします。
 
 forkすると、自分のGitHubアカウント側に `vibe-coding-starter` のコピーができます。
+公開リポジトリをforkすると、fork先も公開リポジトリになります。
+第1章で確認したように、公開される情報に注意します。
 
 fork先のURLは、次のような形になります。
 
@@ -53,6 +55,9 @@ https://github.com/YOUR_GITHUB_USERNAME/vibe-coding-starter
 ```
 
 `YOUR_GITHUB_USERNAME` は自分のGitHubユーザー名です。
+すでにforkがあると言われた場合は、新しく作り直さず、既存のforkを使います。
+fork後は、ブラウザのアドレス欄で自分のユーザー名になっていることを確認します。
+このURLを次章でcloneに使います。
 
 ## cloneとの違い
 
@@ -105,4 +110,3 @@ GitHubのStar、fork、cloneの違いを説明してください。
 次は、forkをcloneし、作業branchを作ります。
 
 - [03-clone-fork-branch.md](03-clone-fork-branch.md)
-
