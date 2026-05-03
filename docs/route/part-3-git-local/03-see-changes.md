@@ -26,6 +26,8 @@ git diff
 → 中身がどう変わったかを見る
 ```
 
+![git status と git diff の違い](../../images/route-git-local/status-diff-scope.png)
+
 第1部で扱った「今どこにいるか」の確認も重要です。
 
 ```bash
