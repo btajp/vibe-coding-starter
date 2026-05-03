@@ -40,6 +40,7 @@ echo $?
 ```
 
 多くの場合、成功すると `0` が表示されます。
+`./bin/vibe-note` が見つからない場合は、前章の `go build` まで戻って実行ファイルを作ってください。
 
 失敗する例も見ます。
 
@@ -68,6 +69,27 @@ tail -n 5 logs/go-note.log
 
 ここでも `>>` は追記です。
 第1部、第4部1章で使った追記と同じ考え方です。
+
+## 生成物とログをGitから外す
+
+`bin/` の実行ファイルや `logs/` のログは、実行するたびに変わる生成物です。
+練習では、ソースコードやスクリプトをcommitし、生成物とログはcommitしない形にします。
+
+第3部で学んだ `.gitignore` を使います。
+この練習用リポジトリでは、まだ `.gitignore` がない前提で作ります。
+すでに `.gitignore` がある場合は、上書きせず中身を確認してから追記します。
+
+```bash
+printf "bin/\nlogs/*.log\n" > .gitignore
+```
+
+状態を確認します。
+
+```bash
+git status
+```
+
+`bin/vibe-note` や `logs/go-note.log` がcommit候補から外れているか確認します。
 
 ## エラーを読む
 
@@ -148,11 +170,19 @@ git status
 git diff
 ```
 
-`bin/` やログファイルをcommitしたくない場合は、次章で`.gitignore`を整理します。
-ここではスクリプトだけcommitします。
+ここでは、`.gitignore` とスクリプトだけcommitします。
 
 ```bash
-git add scripts/check-note.sh
+git add .gitignore scripts/check-note.sh
+git status
+git diff --staged
+```
+
+`bin/` やログファイルがcommit候補に入っていないことを確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add note check script"
 ```
 
@@ -161,4 +191,3 @@ git commit -m "Add note check script"
 次は、cronとlaunchdで定期実行を知ります。
 
 - [05-scheduling.md](05-scheduling.md)
-
