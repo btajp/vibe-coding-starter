@@ -115,6 +115,8 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.zshrc
 前の章で設定したプロンプト表示も、`~/.zshrc` に書く設定の一例です。
 この章では、Homebrewを使うための設定を中心に見ています。
 
+![zsh設定ファイルとPATHの関係](../../images/route-pc-os-cli/zsh-config-path-flow.png)
+
 ## `echo ... >> ファイル`
 
 第0部で使った次の形を見ます。
