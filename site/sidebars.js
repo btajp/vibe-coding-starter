@@ -46,6 +46,23 @@ const sidebars = {
             'route/part-1-pc-os-cli/review',
           ],
         },
+        {
+          type: 'category',
+          label: '第2部：生成AIとコーディングエージェントの基礎',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-2-ai-agents/index',
+          },
+          items: [
+            'route/part-2-ai-agents/generative-ai',
+            'route/part-2-ai-agents/models-and-llms',
+            'route/part-2-ai-agents/chat-vs-agent',
+            'route/part-2-ai-agents/agent-context',
+            'route/part-2-ai-agents/tool-options',
+            'route/part-2-ai-agents/safe-requests',
+          ],
+        },
       ],
     },
     {
