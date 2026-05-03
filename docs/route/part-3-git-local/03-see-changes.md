@@ -124,10 +124,6 @@ git status と git diff の結果を貼ります。
 まだファイルは変更しないでください。
 ```
 
-## commitポイント
-
-この章では、まだcommitしません。
-次の章で `git add` と `git commit` を使います。
 
 ## 次へ
 
