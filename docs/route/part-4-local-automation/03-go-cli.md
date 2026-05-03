@@ -29,6 +29,20 @@ Go
 
 ## Goをインストールする
 
+すでに入っているか確認します。
+
+```bash
+command -v go
+```
+
+場所が表示され、次のコマンドでバージョンが表示されるなら、インストール済みです。
+
+```bash
+go version
+```
+
+まだ入っていなければ、OSに合わせてインストールします。
+
 macOSの場合:
 
 ```bash
@@ -58,7 +72,12 @@ go version
 ```bash
 cd ~/vibe-practice/local-automation
 mkdir -p cmd/vibe-note
+go mod init example.com/vibe-local-automation
 ```
+
+`go.mod` は、Goのプロジェクト設定ファイルです。
+この練習用リポジトリが1つのGoプロジェクトだとGoに伝えるために作ります。
+すでに `go.mod already exists` のように表示された場合は、作成済みなので次へ進みます。
 
 次の内容で `cmd/vibe-note/main.go` を作ります。
 
@@ -154,7 +173,17 @@ Goは、その時点では不要だったので入れませんでした。
 ```bash
 git status
 git diff
-git add cmd/vibe-note/main.go
+git add go.mod cmd/vibe-note/main.go
+git status
+git diff --staged
+```
+
+`bin/vibe-note` がcommit候補に入っていないことを確認します。
+この章では、Goの設定ファイル `go.mod` とソースコードだけをcommitします。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add Go note command"
 ```
 
@@ -165,4 +194,3 @@ git commit -m "Add Go note command"
 次は、標準入力、標準出力、終了ステータスを知ります。
 
 - [04-stdio-exit-status.md](04-stdio-exit-status.md)
-
