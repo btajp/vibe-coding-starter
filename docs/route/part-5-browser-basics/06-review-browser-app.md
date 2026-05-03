@@ -44,10 +44,13 @@ app.js だけを変更して、
 条件:
 - index.html と styles.css は変更しない
 - Consoleエラーが出ないようにする
+- 変更前に、変更予定ファイルと理由を説明する
 - 変更後に何を変えたか説明する
 ```
 
 AIが変更したら、ブラウザで確認します。
+空欄のまま送信した場合と、文字を入力して送信した場合の両方を試します。
+Consoleにエラーが出ていないことも確認します。
 
 ## Git差分を確認する
 
@@ -71,6 +74,15 @@ git diff
 
 ```bash
 git add app.js
+git status
+git diff --staged
+```
+
+AIに頼んだ変更だけがcommit候補になっているか確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Handle empty note input"
 ```
 
