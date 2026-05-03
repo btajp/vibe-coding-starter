@@ -20,6 +20,14 @@ https://YOUR_GITHUB_USERNAME.github.io/vibe-portfolio/
 ```
 
 この場合、Astroには `site` と `base` を設定します。
+`site` はサイトの起点になるURL、`base` はリポジトリ名ぶんのパスだと考えると読みやすくなります。
+
+作業前に、成果物リポジトリにいることを確認します。
+
+```bash
+cd ~/vibe-projects/vibe-portfolio
+pwd
+```
 
 ## astro.config.mjsを設定する
 
@@ -40,7 +48,7 @@ export default defineConfig({
 
 リポジトリ名を `YOUR_GITHUB_USERNAME.github.io` にした場合は、URLの形が変わります。
 その場合、`base` が不要になることがあります。
-迷ったら、Astro公式ドキュメントのGitHub Pages手順を確認します。
+迷ったら、[Astro公式ドキュメントのGitHub Pages手順](https://docs.astro.build/ja/guides/deploy/github/) を確認します。
 
 ## base設定とリンク
 
@@ -60,6 +68,8 @@ mkdir -p .github/workflows
 ```
 
 `.github/workflows/deploy.yml` を作ります。
+次のコマンドは、`deploy.yml` を新しく作るコマンドです。
+同じファイルがすでにある場合は上書きされるため、既存のworkflowがある人は先に中身を確認します。
 
 ```bash
 cat > .github/workflows/deploy.yml <<'EOF'
@@ -80,9 +90,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - name: Install, build, and upload your site
-        uses: withastro/action@v5
+        uses: withastro/action@v6
 
   deploy:
     needs: build
@@ -93,11 +103,12 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 EOF
 ```
 
 これはAstro公式ドキュメントで案内されている構成に沿ったworkflowです。
+Actionのバージョンは更新されることがあるため、実際に使う前に公式ドキュメントの例も確認します。
 
 ## package-lock.jsonをcommitする
 
@@ -109,6 +120,9 @@ npmを使っている場合は、`package-lock.json` をcommitします。
 ```bash
 git status
 ```
+
+`package-lock.json` が表示される場合はcommit対象にします。
+`node_modules` が表示される場合は、commitしません。
 
 ## ローカルでbuildする
 
@@ -128,11 +142,13 @@ git diff
 
 ```bash
 git add astro.config.mjs .github/workflows/deploy.yml package-lock.json package.json
+git diff --staged
 git commit -m "Configure GitHub Pages deployment"
 ```
 
 `package.json` に変更がなければ、addしても問題ありません。
 Gitが変更のないファイルはcommitに含めません。
+`git diff --staged` で、commitに入る内容が設定ファイルとworkflowだけか確認します。
 
 ## 何が起きたのか
 
@@ -158,14 +174,17 @@ workflowは、自動で実行される設定です。
 ```text
 astro.config.mjs と .github/workflows/deploy.yml をレビューしてください。
 
+pwd、git status、git diff の結果も確認してください。
+
 確認したい観点:
 - GitHub PagesのURLに対して site と base が合っているか
 - workflowがmainへのpushで動くか
+- Astro公式ドキュメントのGitHub Pages手順と大きくずれていないか
 - permissionsが過剰ではないか
 - package-lock.jsonをcommitする理由
 - node_modulesをcommitしない理由
 
-まだ git push は実行しないでください。
+まだ git add、git commit、git push は実行しないでください。
 ```
 
 ## 次へ
@@ -173,4 +192,3 @@ astro.config.mjs と .github/workflows/deploy.yml をレビューしてくださ
 次は、GitHub PagesをGitHub Actionsで公開します。
 
 - [04-enable-pages-actions.md](04-enable-pages-actions.md)
-
