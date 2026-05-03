@@ -43,7 +43,7 @@ AGENTS.mdが教材本文ではなく、AIエージェント向けの作業方針
 
 同じ依頼を出し、AGENTS.mdの内容によって出力がどう変わるかを体験します。
 
-### 4. AIにAGENTS.mdの改善案を出させる
+### 4. [AIにAGENTS.mdの改善案を出させる](04-ask-ai-to-improve-agents-md.md)
 
 うまくいかなかったAIの振る舞いから、AGENTS.mdに追加すべきルールをAIと一緒に考えます。
 

@@ -151,3 +151,5 @@ AIが守っているかを、同じ依頼で比べ、差分として確認する
 ## 次へ
 
 次は、AIにAGENTS.mdの改善案を出させます。
+
+- [AIにAGENTS.mdの改善案を出させる](04-ask-ai-to-improve-agents-md.md)
