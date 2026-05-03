@@ -23,6 +23,8 @@ git diff
 commit
 ```
 
+![AIレビュー、Git差分確認、commitで仕上げる流れ](../../images/route-astro-portfolio/ai-git-finish-flow.png)
+
 ## 最終レビューを頼む
 
 AIに、次のように頼みます。
