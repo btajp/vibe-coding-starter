@@ -176,7 +176,18 @@ const sidebars = {
       collapsed: false,
       items: [
         'advanced/index',
-        'advanced/part-1-ai-work-environment/index',
+        {
+          type: 'category',
+          label: '発展編 第1部：AIに任せるための作業環境',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'advanced/part-1-ai-work-environment/index',
+          },
+          items: [
+            'advanced/part-1-ai-work-environment/before-expanding-ai-work',
+          ],
+        },
         'advanced/part-2-agents-md/index',
         'advanced/part-3-context-window-notes/index',
         'advanced/part-4-prompt-templates/index',
