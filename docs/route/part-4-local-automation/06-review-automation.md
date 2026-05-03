@@ -22,6 +22,8 @@ title: 自動化をAIとGitで見直す
 - 何をcommitするか
 - 何をcommitしないか
 
+![自動化を公開前にレビューする](../../images/route-local-automation/automation-review-checks.png)
+
 ## commitしないものを整理する
 
 練習用リポジトリに移動します。
