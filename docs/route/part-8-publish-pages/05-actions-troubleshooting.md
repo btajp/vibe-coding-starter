@@ -28,6 +28,8 @@ Actionsタブ
 
 画面全体を一気に読もうとせず、赤くなっているstepから見ます。
 
+![Actions失敗時にworkflow run、job、logの順に見る](../../images/route-publish-pages/actions-log-troubleshooting.png)
+
 ## よくある失敗
 
 ### npm run buildが失敗する
