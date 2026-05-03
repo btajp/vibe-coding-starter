@@ -43,6 +43,7 @@ git config user.email "learner@example.com"
 ```
 
 これはこの練習用リポジトリ内だけの設定です。
+`learner@example.com` は練習用のダミーのメールアドレスです。
 GitHubに公開するメールアドレスの考え方は、第7部で扱います。
 
 確認します。
@@ -74,6 +75,15 @@ git status
 
 表示が変わっているはずです。
 Gitは、`memo.txt` が次のcommitに入る状態だと教えてくれます。
+
+commitする前に、次のcommitに入る差分を確認します。
+
+```bash
+git diff --staged
+```
+
+`--staged` は、ステージに載っている変更を見るためのオプションです。
+`git add` した後は、普通の `git diff` では表示されず、`git diff --staged` で見える変更があります。
 
 ## commitする
 
@@ -131,7 +141,7 @@ AIが大量に変更した後に、何も確認せず大きなcommitにすると
 ## AIに聞いてみよう
 
 ```text
-git status と git diff の結果を見て、
+git status、git diff、git diff --staged の結果を見て、
 次のcommitに含めるべき変更を提案してください。
 
 ただし、まだ git add や git commit は実行しないでください。
@@ -154,4 +164,3 @@ git log --oneline
 次は、`.gitignore` と秘密情報を扱います。
 
 - [05-gitignore-and-secrets.md](05-gitignore-and-secrets.md)
-
