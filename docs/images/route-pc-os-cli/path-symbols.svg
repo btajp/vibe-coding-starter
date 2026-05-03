@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">パスでよく使う記号</title>
+  <desc id="desc">チルダ、ドット、ドットドットが、それぞれホームディレクトリ、今いるディレクトリ、1つ上のディレクトリを表すことを示す図。</desc>
+  <rect width="1600" height="900" fill="#fbfdff"/>
+
+  <text x="800" y="92" text-anchor="middle" font-family="sans-serif" font-size="58" font-weight="700" fill="#172033">パスでよく使う記号</text>
+
+  <g transform="translate(525 145)">
+    <rect x="0" y="0" width="550" height="295" rx="20" fill="#ffffff" stroke="#d7dee8" stroke-width="4"/>
+    <text x="58" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#172033">home/</text>
+    <text x="122" y="126" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#172033">you/</text>
+    <text x="186" y="190" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#172033">project/</text>
+    <text x="250" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#172033">docs/</text>
+    <text x="186" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#172033">notes/</text>
+
+    <path d="M84 74 V110 H106" stroke="#667085" stroke-width="4" fill="none"/>
+    <path d="M148 138 V174 H170" stroke="#667085" stroke-width="4" fill="none"/>
+    <path d="M212 202 V238 H234" stroke="#667085" stroke-width="4" fill="none"/>
+    <path d="M212 202 V238 H170" stroke="#667085" stroke-width="4" fill="none"/>
+
+    <rect x="312" y="152" width="164" height="52" rx="12" fill="#e6f4ea" stroke="#16803a" stroke-width="3"/>
+    <text x="394" y="188" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="700" fill="#146c2e">今いる場所</text>
+  </g>
+
+  <defs>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#1d64d8"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#16803a"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2 L10 6 L2 10 Z" fill="#c05621"/>
+    </marker>
+  </defs>
+
+  <path d="M338 512 C400 420 520 305 640 270" stroke="#1d64d8" stroke-width="6" fill="none" marker-end="url(#arrow-blue)"/>
+  <path d="M800 512 C800 455 790 392 792 335" stroke="#16803a" stroke-width="6" fill="none" marker-end="url(#arrow-green)"/>
+  <path d="M1262 512 C1160 400 980 280 854 270" stroke="#c05621" stroke-width="6" fill="none" marker-end="url(#arrow-orange)"/>
+
+  <g transform="translate(85 525)">
+    <rect x="0" y="0" width="430" height="250" rx="22" fill="#eff6ff" stroke="#1d64d8" stroke-width="5"/>
+    <text x="215" y="75" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="82" font-weight="800" fill="#1d64d8">~</text>
+    <text x="215" y="128" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="700" fill="#172033">ホームディレクトリ</text>
+    <rect x="78" y="158" width="274" height="58" rx="12" fill="#ffffff" stroke="#a9c7ff" stroke-width="3"/>
+    <text x="215" y="198" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#1d64d8">~/src</text>
+  </g>
+
+  <g transform="translate(585 525)">
+    <rect x="0" y="0" width="430" height="250" rx="22" fill="#ecfdf3" stroke="#16803a" stroke-width="5"/>
+    <text x="215" y="75" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="82" font-weight="800" fill="#16803a">.</text>
+    <text x="215" y="128" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="700" fill="#172033">今いるディレクトリ</text>
+    <rect x="78" y="158" width="274" height="58" rx="12" fill="#ffffff" stroke="#a8ddb8" stroke-width="3"/>
+    <text x="215" y="198" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#16803a">./docs</text>
+  </g>
+
+  <g transform="translate(1085 525)">
+    <rect x="0" y="0" width="430" height="250" rx="22" fill="#fff7ed" stroke="#c05621" stroke-width="5"/>
+    <text x="215" y="75" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="82" font-weight="800" fill="#c05621">..</text>
+    <text x="215" y="128" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="700" fill="#172033">1つ上のディレクトリ</text>
+    <rect x="78" y="158" width="274" height="58" rx="12" fill="#ffffff" stroke="#f3bf8d" stroke-width="3"/>
+    <text x="215" y="198" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="700" fill="#c05621">../notes</text>
+  </g>
+
+  <rect x="185" y="812" width="1230" height="58" rx="18" fill="#fff8e5" stroke="#f2c04f" stroke-width="4"/>
+  <text x="800" y="851" text-anchor="middle" font-family="sans-serif" font-size="31" font-weight="700" fill="#4a3415">記号は、基準になる場所を短く書くためのもの</text>
+</svg>

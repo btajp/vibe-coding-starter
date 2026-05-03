@@ -123,7 +123,7 @@ mkdir
 ```
 
 これらは、どこで作業しているか、どこにディレクトリを作るかを扱う操作です。
-第1部では、ファイル、ディレクトリ、パスの考え方として回収します。
+このあと、[ファイル、ディレクトリ、パスを読む](02-files-paths.md) と [ターミナル、CLI、シェル、基本コマンドを読む](04-terminal-shell-commands.md) で確認します。
 
 ### 2. OS側の準備をした操作
 
@@ -135,7 +135,7 @@ wsl --list --verbose
 ```
 
 これは、Windowsの中にUbuntu側の作業環境を用意し、入ったことを確認する操作です。
-第1部では、Windows、PowerShell、ターミナル、WSL Ubuntuの関係として回収します。
+このあと、[macOS、Windows、WSL Ubuntuの関係を整理する](03-os-wsl.md) で確認します。
 
 macOSでは、主にHomebrewを使いました。
 
@@ -153,7 +153,7 @@ brew install node
 ```
 
 これらは、PCに道具を入れる操作です。
-第1部では、Homebrew、apt、npmの違いとして回収します。
+このあと、[Homebrew、apt、npmを使い分ける](07-package-managers.md) で確認します。
 
 ### 3. シェル設定を変えた操作
 
@@ -172,7 +172,7 @@ chsh -s "$(command -v zsh)"
 ```
 
 これらは、ターミナルを開いたときの動きや、コマンドが見つかる場所に関わります。
-第1部では、PATH、`.zprofile`、`.zshrc`、`command -v`、`eval` として回収します。
+このあと、[危ないコマンドと権限を先に見分ける](05-dangerous-commands-permissions.md) と [PATHとシェル設定を理解する](06-path-shell-config.md) で確認します。
 
 ### 4. AIエージェントを入れた操作
 
@@ -183,7 +183,7 @@ npm install -g @openai/codex
 ```
 
 `npm install -g` は、ターミナルから直接使えるコマンドを追加する操作です。
-第1部では、npmとグローバルインストールとして回収します。
+このあと、[Homebrew、apt、npmを使い分ける](07-package-managers.md) で確認します。
 
 Claude Codeを使う場合は、公式インストーラーを使いました。
 
@@ -192,7 +192,7 @@ curl -fsSL https://claude.ai/install.sh | bash
 ```
 
 これは、公式サイトからインストール用スクリプトを取得して実行する操作です。
-第1部では、`curl` と `|` の意味、実行前にURLを確認する理由として回収します。
+このあと、[危ないコマンドと権限を先に見分ける](05-dangerous-commands-permissions.md) で確認します。
 
 ### 5. GitHubから教材を持ってきた操作
 
@@ -203,7 +203,7 @@ git clone https://github.com/btajp/vibe-coding-starter.git
 ```
 
 この操作で、GitHub上にあるリポジトリがローカルPCに複製されました。
-第1部では、ローカルリポジトリ、リモートリポジトリ、リポジトリURLとして回収します。
+このあと、[GitHubからcloneした状態を理解する](08-understand-clone.md) で確認します。
 
 ### 6. AIエージェントを起動した操作
 
@@ -221,7 +221,7 @@ Do you trust the contents of this directory?
 ```
 
 これは、AIエージェントに今いるディレクトリの中身を読ませてよいかを確認する表示です。
-第1部では、作業ディレクトリと、AIに見えている範囲の関係として回収します。
+このあと、[GitHubからcloneした状態を理解する](08-understand-clone.md) と [秘密情報とログイン状態を混同しない](09-secrets-and-accounts.md) で確認します。
 
 ## 何が起きたのか
 
