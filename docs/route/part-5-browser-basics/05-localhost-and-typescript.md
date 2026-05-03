@@ -28,11 +28,23 @@ title: ローカルサーバーとTypeScriptの入口
 ## ローカルサーバーを起動する
 
 Python 3が入っている場合は、次で簡単なローカルサーバーを起動できます。
+まず確認します。
+
+```bash
+python3 --version
+```
+
+バージョンが表示されれば使えます。
+入っていない場合、この章では無理にインストールしなくて構いません。
+内容を読んで、第6部の開発サーバーの準備として理解します。
 
 ```bash
 cd ~/vibe-practice/browser-basics
 python3 -m http.server 8000
 ```
+
+このコマンドを実行すると、ターミナルはローカルサーバーを動かすために使われます。
+プロンプトが戻ってこなくても、失敗とは限りません。
 
 ブラウザで次を開きます。
 
@@ -41,6 +53,14 @@ http://localhost:8000
 ```
 
 止めるときは、ターミナルで `Ctrl+C` を押します。
+`Address already in use` のように表示された場合は、8000番ポートを別のプロセスが使っています。
+その場合は、いったん止めてから、別の番号で試します。
+
+```bash
+python3 -m http.server 8001
+```
+
+その場合、ブラウザで開くURLも `http://localhost:8001` に変えます。
 
 ## localhostとは何か
 
@@ -130,4 +150,3 @@ TypeScriptを、JavaScriptに型を足したものとして説明してくださ
 次は、ブラウザアプリをAIとGitで見直します。
 
 - [06-review-browser-app.md](06-review-browser-app.md)
-
