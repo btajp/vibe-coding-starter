@@ -24,6 +24,8 @@ git diff
 
 変更ファイルと変更内容を確認して、理解できる単位でcommitします。
 
+![AIの変更はdiffで確認する](../../images/route-git-local/review-ai-changes-flow.png)
+
 ## AIに小さな変更を頼む
 
 練習用リポジトリで、AIに小さな変更を頼む例です。
