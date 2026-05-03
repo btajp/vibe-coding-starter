@@ -31,6 +31,7 @@ title: リファレンス
 - [リポジトリ配置](repository-layout.md)
 - [ghq](ghq.md)
 - [シェルとプロンプトのカスタマイズ](shell-and-prompt-customization.md)
+- [AIコーディングツールの選び方](ai-coding-tools.md)
 - [AIへの依頼例](ai-prompts.md)
 - [安全に進めるための基礎](safety-basics.md)
 - [運用の考え方](operation-mindset.md)

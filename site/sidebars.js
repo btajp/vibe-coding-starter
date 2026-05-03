@@ -187,6 +187,7 @@ const sidebars = {
         'reference/repository-layout',
         'reference/ghq',
         'reference/shell-and-prompt-customization',
+        'reference/ai-coding-tools',
         'reference/ai-prompts',
         'reference/safety-basics',
         'reference/operation-mindset',

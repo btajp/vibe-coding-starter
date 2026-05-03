@@ -30,10 +30,15 @@
 ## AI coding tools
 
 - Claude Code Docs: https://code.claude.com/docs/ja/overview
-- Claude Code Setup: https://docs.anthropic.com/ja/docs/claude-code/setup
-- Claude Code Quickstart: https://docs.anthropic.com/en/docs/claude-code/quickstart
+- Claude Code Setup: https://code.claude.com/docs/en/setup
+- Claude Code Quickstart: https://code.claude.com/docs/en/quickstart
 - OpenAI Codex CLI: https://developers.openai.com/codex/cli
 - OpenAI Codex npm package: https://www.npmjs.com/package/@openai/codex
+- Cursor Docs: https://docs.cursor.com/
+- GitHub Copilot Docs: https://docs.github.com/copilot
+- Gemini CLI Docs: https://google-gemini.github.io/gemini-cli/docs/
+- Continue Docs: https://docs.continue.dev/
+- Ollama Docs: https://docs.ollama.com/
 - AGENTS.md guide: https://developers.openai.com/codex/guides/agents-md
 - AGENTS.md open format: https://agents.md/
 
