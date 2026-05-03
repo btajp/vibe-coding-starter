@@ -67,6 +67,12 @@ http://localhost:4321
 ```
 
 止めるときは、ターミナルで `Ctrl+C` を押します。
+`npm run dev` を実行している間、そのターミナルは開発サーバー用に使われます。
+プロンプトが戻ってこなくても、表示されたURLを開けていれば正常です。
+別のコマンドを実行したい場合は、別のターミナルタブを開きます。
+
+もし4321番ポートが使われている場合、Astroが別のURLを表示することがあります。
+教材に書かれたURLではなく、ターミナルに表示されたURLを開きます。
 
 ## 第5部のlocalhostを思い出す
 
@@ -88,7 +94,12 @@ npm run build
 
 ```bash
 ls dist
+git status
 ```
+
+`dist/` は生成物です。
+通常は `.gitignore` によってcommit対象から外れます。
+`git status` に `dist/` がcommit候補として出ていたら、commitする前に止まります。
 
 ## 何が起きたのか
 
@@ -138,4 +149,3 @@ git diff
 次は、Astroのファイル構成を見ます。
 
 - [04-astro-file-structure.md](04-astro-file-structure.md)
-
