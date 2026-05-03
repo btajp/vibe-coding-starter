@@ -122,3 +122,5 @@ AGENTS.mdは、AIにとっての作業ルールです。
 
 次は、最小のAGENTS.mdを書きます。
 まずは少ないルールで始め、必要になったものだけを追加していきます。
+
+- [最小のAGENTS.mdを書く](02-minimal-agents-md.md)

@@ -202,6 +202,7 @@ const sidebars = {
           },
           items: [
             'advanced/part-2-agents-md/agents-md-role',
+            'advanced/part-2-agents-md/minimal-agents-md',
           ],
         },
         'advanced/part-3-context-window-notes/index',
