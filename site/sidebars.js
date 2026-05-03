@@ -114,6 +114,24 @@ const sidebars = {
             'route/part-5-browser-basics/review-browser-app',
           ],
         },
+        {
+          type: 'category',
+          label: '第6部：Astroで成果物ポートフォリオを作る',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-6-astro-portfolio/index',
+          },
+          items: [
+            'route/part-6-astro-portfolio/separate-artifact-repo',
+            'route/part-6-astro-portfolio/create-astro-project',
+            'route/part-6-astro-portfolio/npm-scripts-dev-server',
+            'route/part-6-astro-portfolio/astro-file-structure',
+            'route/part-6-astro-portfolio/portfolio-content',
+            'route/part-6-astro-portfolio/build-and-review',
+            'route/part-6-astro-portfolio/finish-with-ai-and-git',
+          ],
+        },
       ],
     },
     {
