@@ -16,6 +16,8 @@ title: 感想ファイルを追加する
 1人1ファイルを追加します。
 既存ファイルを書き換えないことで、他の人と衝突しにくくします。
 
+![感想ファイルを作り、公開前に読み、commitする流れ](../../images/route-github-collaboration/review-file-flow.png)
+
 ## ファイル名を決める
 
 ファイル名は、GitHubユーザー名を使います。
