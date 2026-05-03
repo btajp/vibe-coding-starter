@@ -63,6 +63,23 @@ const sidebars = {
             'route/part-2-ai-agents/safe-requests',
           ],
         },
+        {
+          type: 'category',
+          label: '第3部：Gitで変更を見る・記録する',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-3-git-local/index',
+          },
+          items: [
+            'route/part-3-git-local/git-vs-github',
+            'route/part-3-git-local/create-practice-repo',
+            'route/part-3-git-local/see-changes',
+            'route/part-3-git-local/stage-and-commit',
+            'route/part-3-git-local/gitignore-and-secrets',
+            'route/part-3-git-local/review-ai-changes',
+          ],
+        },
       ],
     },
     {
