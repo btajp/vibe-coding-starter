@@ -16,6 +16,8 @@ GitHub Pagesには、公開元を選ぶ設定があります。
 Astroのようにbuildが必要なサイトでは、GitHub ActionsでbuildしてPagesへdeployする構成がわかりやすいです。
 前章で作った `deploy.yml` は、`main` にpushされたときに動く設定です。
 
+![Pages設定、Actions実行、公開URL確認の流れ](../../images/route-publish-pages/pages-actions-publish-flow.png)
+
 ## Pages設定を確認する
 
 GitHub上の `vibe-portfolio` リポジトリを開きます。
