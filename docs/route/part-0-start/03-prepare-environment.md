@@ -201,7 +201,7 @@ sed --version
 curl --version
 ```
 
-WSL Ubuntuでも、この教材ではNode.js / npmをHomebrewで入れます。
+WSL Ubuntuでも、この教材では `ghq` とNode.js / npmをHomebrewで入れます。
 macOSと近い手順にするためです。
 
 ```bash
@@ -212,10 +212,11 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew --version
 ```
 
-Node.jsを入れます。
+`ghq` とNode.jsを入れます。
 
 ```bash
-brew install node
+brew install ghq node
+ghq --version
 node --version
 npm --version
 ```

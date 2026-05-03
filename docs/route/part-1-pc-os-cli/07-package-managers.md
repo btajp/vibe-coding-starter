@@ -37,11 +37,11 @@ Homebrewは、macOSでよく使われるパッケージ管理ツールです。
 brew install zsh git bash gawk gnu-sed ghq node
 ```
 
-WSL Ubuntuでも、Node.js / npmをmacOSと近い手順で入れるためにHomebrewを使いました。
+WSL Ubuntuでも、`ghq` とNode.js / npmをmacOSと近い手順で入れるためにHomebrewを使いました。
 Linux上のHomebrewは、Linuxbrewと呼ばれることもあります。
 
 ```bash
-brew install node
+brew install ghq node
 ```
 
 Homebrewで入れたものは、`brew --version` や `command -v` で確認できます。

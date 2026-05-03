@@ -109,7 +109,7 @@ WSL Ubuntuでは、aptとHomebrewの両方を使いました。
 ```bash
 sudo apt update
 sudo apt install -y zsh git bash gawk sed curl build-essential procps file bubblewrap
-brew install node
+brew install ghq node
 ```
 
 これらは、PCに道具を入れる操作です。

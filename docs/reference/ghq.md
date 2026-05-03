@@ -28,11 +28,18 @@ brew install ghq
 
 ## WSL Ubuntuでの導入
 
-WSL Ubuntuでは、環境によって導入方法が異なります。
+この教材では、WSL UbuntuでもHomebrewで `ghq` を入れます。
+Linux上のHomebrewは、Linuxbrewと呼ばれることもあります。
 
-この教材のMVPでは、WSL Ubuntuでのghq導入は必須にしません。
+```bash
+brew install ghq
+```
 
-必要になったら、公式リポジトリを確認してください。
+確認します。
+
+```bash
+ghq --version
+```
 
 ## 設定例
 
@@ -64,6 +71,17 @@ ghq list
 ```
 
 `ghq get` は、設定したルート配下にリポジトリをcloneします。どこに置かれたかは `ghq list` で確認します。
+
+すでに同じリポジトリがある場合、cloneに失敗したり、既存の場所を使うよう案内されたりすることがあります。
+そのときはすぐ削除せず、まずどこにあるかを確認します。
+
+```bash
+ghq list | grep vibe-coding-starter
+ls -la ~/src/github.com/btajp
+```
+
+`ghq` を使わず手動でcloneしている場合でも、考え方は同じです。
+GitHub上のURLと、ローカルPC上の置き場所の対応を確認してから進みます。
 
 ## AIに聞くプロンプト
 
