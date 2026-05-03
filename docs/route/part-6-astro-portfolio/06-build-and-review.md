@@ -33,11 +33,13 @@ npm run build
 
 ```bash
 ls dist
+git status
 ```
 
 `dist/` は公開用に生成されたファイルです。
 通常、ソースとしてcommitする対象ではありません。
 GitHub Pagesでの公開方法によって扱いが変わるため、第8部で改めて確認します。
+この時点で `dist/` がcommit候補に出ていたら、commitする前に止まります。
 
 ## previewする
 
@@ -49,6 +51,8 @@ npm run preview
 
 表示されたURLをブラウザで開きます。
 止めるときは `Ctrl+C` です。
+`npm run preview` を実行している間、そのターミナルはpreview用に使われます。
+教材のURLではなく、ターミナルに表示されたURLを開きます。
 
 ## 公開前チェック
 
@@ -69,7 +73,7 @@ git status
 git diff
 ```
 
-## AIに公開前レビューを頼む
+## AIに聞いてみよう
 
 ```text
 Astroポートフォリオを公開前レビューしてください。
@@ -116,6 +120,15 @@ git diff
 
 ```bash
 git add README.md docs src
+git status
+git diff --staged
+```
+
+`dist/`、`node_modules`、秘密情報がcommit候補に入っていないことを確認します。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Review portfolio before publish"
 ```
 
@@ -124,4 +137,3 @@ git commit -m "Review portfolio before publish"
 次は、AIとGitで仕上げます。
 
 - [07-finish-with-ai-and-git.md](07-finish-with-ai-and-git.md)
-
