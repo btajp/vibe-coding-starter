@@ -12,15 +12,23 @@ title: 公開後に修正して再デプロイする
 ## まず知っておくこと
 
 GitHub Pagesで公開した後も、サイトは変更できます。
+作業する場所は、引き続き成果物リポジトリです。
+
+```bash
+cd ~/vibe-projects/vibe-portfolio
+pwd
+```
 
 基本の流れは次です。
 
 ```text
 ローカルで修正
 ↓
+npm run devで確認
+↓
 npm run build
 ↓
-git status / git diff
+git status / git diff / git diff --staged
 ↓
 commit
 ↓
@@ -34,6 +42,7 @@ Actions確認
 ## 小さな修正をする
 
 たとえば、トップページの文章を少し直します。
+最初は、1か所だけ小さく直します。
 
 修正後、ローカルで確認します。
 
@@ -61,17 +70,23 @@ git diff
 ```
 
 公開してよい変更だけか確認します。
+パスワード、APIキー、トークン、公開したくない個人情報が入っていないかも見ます。
 
 ## commitしてpushする
 
 ```bash
-git add src README.md docs
+git add src/pages/index.astro
+git diff --staged
 git commit -m "Update portfolio content"
 git push
 ```
 
+`git add` の対象は、実際に修正したファイルに合わせます。
+まとめてaddする前に、何を公開するcommitなのか説明できる状態にします。
+
 GitHub Actionsが再実行されます。
 Actionsタブで成功を確認し、公開URLを開きます。
+公開URLへの反映には少し時間がかかることがあります。
 
 ## 公開後の維持
 
@@ -113,18 +128,20 @@ Vibe Codingでも、運用責任は人間が持ちます。
 
 変更前に、次の流れで問題ないか確認してください。
 - ローカルで修正
+- npm run devで確認
 - npm run build
-- git status / git diff
+- git status / git diff / git diff --staged
 - commit
 - push
 - GitHub Actions確認
 - 公開URL確認
 
+pwd、git status、git diff の結果を見て、公開してよい差分だけかも確認してください。
 公開済みサイトの運用で注意することも整理してください。
-まだファイルは変更しないでください。
+まだファイル編集、commit、pushはしないでください。
 ```
 
-## commitポイント
+## 作業を閉じる前に確認する
 
 公開後の修正は、小さくcommitします。
 
@@ -133,11 +150,10 @@ git log --oneline -n 5
 git status
 ```
 
-Actionsと公開URLまで確認して一区切りです。
+作業ツリーがcleanで、Actionsと公開URLまで確認できれば一区切りです。
 
 ## 次へ
 
 次は、卒業レビューと次の学習パスです。
 
 - [07-graduation-review.md](07-graduation-review.md)
-
