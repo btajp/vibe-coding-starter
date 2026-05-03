@@ -68,7 +68,7 @@ Vibe Codingは理解の代わりではなく、理解している人の試行回
 
 ## この教材でできるようになること
 
-- macOSまたはWindows / WSL Ubuntuで、開発を始める準備ができる
+- macOSまたはWindows 11 / WSL Ubuntuで、開発を始める準備ができる
 - ターミナル、CLI、ファイル、パス、Git、GitHubの基礎を確認できる
 - CodexやClaude Codeを、作業の相棒として使い始められる
 - 自分のポートフォリオを作り、GitHub Pagesで公開できる
