@@ -24,15 +24,14 @@ title: 第0部で何をしたのかを棚卸しする
 - 教材リポジトリをcloneした
 - 教材リポジトリでAIエージェントを起動した
 
-この章の目的は、それらをすぐに完璧に理解することではありません。
-第1部全体で回収するために、まず棚卸しします。
-
-ここでいう棚卸しとは、実行した操作を分類して、あとで確認しやすくすることです。
+この章では、まず第0部でやったことを一覧にします。
+意味を完璧に説明できなくても構いません。
+何をしたのかを分けておくと、あとで迷いにくくなります。
 
 ```text
 何をしたか
 どこに影響したか
-どの章で意味を回収するか
+何で止まったら、何を確認するか
 ```
 
 ## やってみる
@@ -62,11 +61,40 @@ ls
 /home/あなたのユーザー名/src/github.com/btajp/vibe-coding-starter
 ```
 
+違う場所にいる場合は、教材リポジトリへ移動します。
+
+```bash
+cd ~/src/github.com/btajp/vibe-coding-starter
+pwd
+```
+
+`cd` は、作業するディレクトリを移動するコマンドです。
+移動したあとに `pwd` を実行すると、今いる場所を確認できます。
+
+`ghq` を入れた人は、次のコマンドでも教材リポジトリの場所を確認できます。
+
+```bash
+ghq list
+```
+
+`ghq` は、Gitリポジトリを決まった場所に整理して置くための補助ツールです。
+この時点では、次の1行だけが表示される人が多いはずです。
+
+```text
+github.com/btajp/vibe-coding-starter
+```
+
+この行が表示されれば、教材リポジトリが `ghq` からも見えています。
+詳しくはリファレンスの [ghq](../../reference/ghq.md) で確認できます。
+
 次に、第0部のファイルを確認します。
 
 ```bash
 ls docs/route/part-0-start
 ```
+
+さっきの `ls` は、今いるディレクトリの中身を表示しました。
+ここでは `docs/route/part-0-start` という場所を指定して、その中身を表示しています。
 
 次のようなファイルが見えればOKです。
 
@@ -79,9 +107,11 @@ ls docs/route/part-0-start
 index.md
 ```
 
+![pwd、ls、cdの関係](../../images/route-pc-os-cli/pwd-ls-cd.png)
+
 ## 第0部で実行した操作を分類する
 
-第0部で実行した操作は、大きく分けると次の5種類です。
+第0部で実行した操作は、大きく分けると次の6種類です。
 
 ### 1. 場所を確認した操作
 
@@ -97,11 +127,21 @@ mkdir
 
 ### 2. OS側の準備をした操作
 
+Windowsの人は、PowerShellでWSL Ubuntuを入れる操作をしました。
+
+```powershell
+wsl --install
+wsl --list --verbose
+```
+
+これは、Windowsの中にUbuntu側の作業環境を用意し、入ったことを確認する操作です。
+第1部では、Windows、PowerShell、ターミナル、WSL Ubuntuの関係として回収します。
+
 macOSでは、主にHomebrewを使いました。
 
 ```bash
 brew --version
-brew install zsh git bash gawk gnu-sed ghq node
+brew install zsh git bash gawk gnu-sed node
 ```
 
 WSL Ubuntuでは、aptとHomebrewの両方を使いました。
@@ -109,7 +149,7 @@ WSL Ubuntuでは、aptとHomebrewの両方を使いました。
 ```bash
 sudo apt update
 sudo apt install -y zsh git bash gawk sed curl build-essential procps file bubblewrap
-brew install ghq node
+brew install node
 ```
 
 これらは、PCに道具を入れる操作です。
@@ -165,6 +205,24 @@ git clone https://github.com/btajp/vibe-coding-starter.git
 この操作で、GitHub上にあるリポジトリがローカルPCに複製されました。
 第1部では、ローカルリポジトリ、リモートリポジトリ、リポジトリURLとして回収します。
 
+### 6. AIエージェントを起動した操作
+
+教材リポジトリの中で、CodexまたはClaude Codeを起動しました。
+
+```bash
+codex
+claude
+```
+
+起動時に、次のような意味の確認が出ることがあります。
+
+```text
+Do you trust the contents of this directory?
+```
+
+これは、AIエージェントに今いるディレクトリの中身を読ませてよいかを確認する表示です。
+第1部では、作業ディレクトリと、AIに見えている範囲の関係として回収します。
+
 ## 何が起きたのか
 
 第0部では、いろいろなコマンドを実行しました。
@@ -193,6 +251,12 @@ git cloneを実行したら、次のエラーが出ました。
 
 ```text
 Codexを入れるためにnpm install -gを実行したら、権限エラーが出ました。
+```
+
+または、次のように言えます。
+
+```text
+Claude Codeを入れるために公式インストーラーを実行したら、command not found が出ました。
 ```
 
 何の操作で止まったのかを言えることが、トラブル対応の入口です。

@@ -88,7 +88,7 @@ brew --version
 次に、基本ツールを入れます。
 
 ```bash
-brew install zsh git bash gawk gnu-sed ghq node
+brew install zsh git bash gawk gnu-sed node
 ```
 
 確認します。
@@ -99,7 +99,6 @@ git --version
 bash --version
 gawk --version
 gsed --version
-ghq --version
 node --version
 npm --version
 ```
@@ -110,7 +109,6 @@ npm --version
 - `git`: リポジトリをcloneし、変更履歴を扱う道具
 - `bash`: インストールスクリプトなどでよく使われるシェル
 - `gawk` / `gnu-sed`: Linux側と挙動を近づけるためのGNU系ツール
-- `ghq`: リポジトリ配置の考え方を学ぶための補助ツール
 - `node` / `npm`: Codexや今後のJavaScript系ツールを使う土台
 
 ![macOSで準備する流れ](../../images/route-start/macos-setup-flow.png)
@@ -201,7 +199,7 @@ sed --version
 curl --version
 ```
 
-WSL Ubuntuでも、この教材では `ghq` とNode.js / npmをHomebrewで入れます。
+WSL Ubuntuでも、この教材ではNode.js / npmをHomebrewで入れます。
 macOSと近い手順にするためです。
 
 ```bash
@@ -212,11 +210,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew --version
 ```
 
-`ghq` とNode.jsを入れます。
+Node.jsを入れます。
 
 ```bash
-brew install ghq node
-ghq --version
+brew install node
 node --version
 npm --version
 ```

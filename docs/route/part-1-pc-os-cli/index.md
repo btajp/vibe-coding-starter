@@ -23,7 +23,8 @@ title: 第1部：PC・OS・CLIの意味を回収する
 
 第0部で特に回収が必要な操作は次です。
 
-- `wsl --install -d Ubuntu`
+- `wsl --install`
+- `wsl --list --verbose`
 - `pwd`、`ls`、`cd`、`mkdir`
 - Homebrewのインストール
 - `brew install ...`

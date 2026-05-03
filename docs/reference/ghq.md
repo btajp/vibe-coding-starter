@@ -20,16 +20,9 @@
 
 その後、`ghq` を使うと、この構成を自動化できます。
 
-## macOSでの導入
+## 導入
 
-```bash
-brew install ghq
-```
-
-## WSL Ubuntuでの導入
-
-この教材では、WSL UbuntuでもHomebrewで `ghq` を入れます。
-Linux上のHomebrewは、Linuxbrewと呼ばれることもあります。
+macOSでもWSL Ubuntuでも、Homebrewを使える状態なら次で入れられます。
 
 ```bash
 brew install ghq

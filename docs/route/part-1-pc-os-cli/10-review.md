@@ -42,7 +42,7 @@ AIに相談するとき、何を貼ってよくて何を貼ってはいけない
 たとえば、次のコマンドです。
 
 ```bash
-brew install zsh git bash gawk gnu-sed ghq node
+brew install zsh git bash gawk gnu-sed node
 ```
 
 説明例:

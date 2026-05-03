@@ -170,11 +170,11 @@ macOSでは、Homebrewを使って道具を入れました。
 brew install ...
 ```
 
-WSL Ubuntuでは、Ubuntu側の基本ツールをaptで入れ、その後 `ghq` とNode.js / npmをHomebrewで入れました。
+WSL Ubuntuでは、Ubuntu側の基本ツールをaptで入れ、その後Node.js / npmをHomebrewで入れました。
 
 ```text
 sudo apt install ...
-brew install ghq node
+brew install node
 ```
 
 どちらも、最終的には似た開発環境に近づけるための手順です。
