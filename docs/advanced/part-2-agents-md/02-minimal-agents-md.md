@@ -144,3 +144,5 @@ AIとの作業で、同じ説明を何度もしていること、毎回やり直
 ## 次へ
 
 次は、同じ依頼をAGENTS.mdの変更前後で比べます。
+
+- [同じ依頼をAGENTS.md変更前後で比べる](03-compare-before-after-agents-md.md)
