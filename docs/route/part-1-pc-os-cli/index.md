@@ -104,7 +104,7 @@ title: 第1部：PC・OS・CLIの意味を回収する
 - パッケージ、依存関係、バージョン確認
 - `npm install -g` とグローバルインストール
 - `sudo npm install -g ...` を避けたい理由
-- Node.js、npm、Codex、Claude Codeの関係
+- Node.js、npm、Codex、Claude Code導入方法の関係
 
 ### 8. GitHubからcloneした状態を理解する
 

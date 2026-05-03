@@ -97,7 +97,7 @@ git config user.email "learner@example.com"
 
 `npm create astro@latest` は、npmを使ってAstroプロジェクト作成ツールを実行します。
 
-第0部では、CodexやClaude Codeを入れるためにnpmを使いました。
+第0部では、Codexを入れるためにnpmを使いました。
 この章では、Web制作のプロジェクトを作るためにnpmを使っています。
 
 同じnpmでも、目的が違います。
@@ -146,4 +146,3 @@ git commit -m "Create Astro portfolio"
 次は、npm scriptsと開発サーバーを理解します。
 
 - [03-npm-scripts-dev-server.md](03-npm-scripts-dev-server.md)
-

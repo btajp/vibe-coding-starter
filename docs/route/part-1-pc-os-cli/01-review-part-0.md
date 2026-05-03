@@ -136,15 +136,23 @@ chsh -s "$(command -v zsh)"
 
 ### 4. AIエージェントを入れた操作
 
-CodexまたはClaude Codeを使えるようにするために、npmを使いました。
+Codexを使えるようにするために、npmを使いました。
 
 ```bash
 npm install -g @openai/codex
-npm install -g @anthropic-ai/claude-code
 ```
 
 `npm install -g` は、ターミナルから直接使えるコマンドを追加する操作です。
 第1部では、npmとグローバルインストールとして回収します。
+
+Claude Codeを使う場合は、公式インストーラーを使いました。
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+これは、公式サイトからインストール用スクリプトを取得して実行する操作です。
+第1部では、`curl` と `|` の意味、実行前にURLを確認する理由として回収します。
 
 ### 5. GitHubから教材を持ってきた操作
 

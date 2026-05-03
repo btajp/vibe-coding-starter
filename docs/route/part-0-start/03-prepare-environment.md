@@ -111,7 +111,7 @@ npm --version
 - `bash`: インストールスクリプトなどでよく使われるシェル
 - `gawk` / `gnu-sed`: Linux側と挙動を近づけるためのGNU系ツール
 - `ghq`: リポジトリ配置の考え方を学ぶための補助ツール
-- `node` / `npm`: CodexやClaude Codeを入れる土台
+- `node` / `npm`: Codexや今後のJavaScript系ツールを使う土台
 
 ![macOSで準備する流れ](../../images/route-start/macos-setup-flow.png)
 
