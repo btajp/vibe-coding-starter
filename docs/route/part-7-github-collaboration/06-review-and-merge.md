@@ -28,23 +28,39 @@ PRでは、次のようなことが起きます。
 
 PRにコメントが付いたら、内容を読みます。
 
-修正が必要な場合は、ローカルで修正してcommitし、同じbranchへpushします。
+まず、コメントが何を求めているかを分けます。
+
+- 返信だけでよい
+- ファイルの修正が必要
+- 意図がわからないので確認が必要
+
+ファイルの修正が必要な場合は、ローカルで修正してcommitし、同じbranchへpushします。
+新しいPRを作り直す必要はありません。
 
 ```bash
 cd ~/vibe-practice/github-pr/vibe-coding-starter
 git status
+git branch
 ```
+
+`git branch` で、前章で作った作業branchにいることを確認します。
+違うbranchにいるまま修正すると、PRに反映されないことがあります。
 
 ファイルを修正したら確認します。
 
 ```bash
 git diff
 git add reviews/YOUR_GITHUB_USERNAME.md
+git diff --staged
 git commit -m "Update review text"
 git push
 ```
 
-同じbranchへpushすると、PRも更新されます。
+`git diff` で修正内容を確認し、`git diff --staged` でcommitに入る内容をもう一度確認します。
+同じbranchへpushすると、GitHub上のPRも更新されます。
+
+コメントが返信だけでよい内容なら、ファイルを変更せず、PR画面で返信します。
+判断に迷う場合は、いきなり修正せず、先に確認のコメントを返します。
 
 ## mergeとは何か
 
@@ -82,6 +98,7 @@ reviewを受けたら、次を確認します。
 - 反論ではなく確認が必要か
 - 追加commitで対応するか
 - PR本文やコメントで説明するか
+- 同じbranchへpushしているか
 
 AIに返答文を書かせても構いませんが、送る前に自分で確認します。
 
@@ -95,9 +112,10 @@ Pull Requestにreviewコメントが付きました。
 
 必要なら修正方針を提案してください。
 まだファイルは変更しないでください。
+パスワード、トークン、認証コードなどの秘密情報は貼りません。
 ```
 
-## commitポイント
+## PRを更新したあとに確認する
 
 修正した場合は、追加commitして同じbranchへpushします。
 
@@ -107,11 +125,11 @@ git diff
 git log --oneline -n 5
 ```
 
-PR画面で変更が反映されたか確認します。
+`git status` がcleanになっていること、直近のcommitが増えていることを確認します。
+その後、PR画面で変更が反映されたか確認します。
 
 ## 次へ
 
 次は、GitHub体験を振り返ります。
 
 - [07-github-review.md](07-github-review.md)
-
