@@ -12,6 +12,7 @@ JavaScriptでHTML要素を取得し、クリックイベントで画面を更新
 ## まず知っておくこと
 
 ブラウザはHTMLを読み、ページの構造をDOMとして扱います。
+DOMはDocument Object Modelの略です。
 DOMは、JavaScriptからHTML要素を操作するための入口だと考えてください。
 
 この章では、次を使います。
@@ -48,6 +49,8 @@ button.addEventListener("click", () => {
 クリック回数を数えるように変更します。
 
 `app.js` を次の内容にします。
+このコマンドは `app.js` を上書きします。
+前章の内容をクリック回数版に置き換える操作です。
 
 ```bash
 cat > app.js <<'EOF'
@@ -90,9 +93,11 @@ HTMLファイル自体を書き換えているわけではありません。
 console.log(count);
 ```
 
+たとえば、`count += 1;` の直後に入れると、クリックするたびに増えた回数を確認できます。
 DevToolsのConsoleを見ると、クリックするたびに数字が出ます。
 
-確認が終わったら、必要のないログは消して構いません。
+確認が終わったら、必要のないログは消します。
+commit前の `git diff` で、確認用の `console.log(count);` が残っていないか見ます。
 
 ## 運用者の視点
 
@@ -130,6 +135,15 @@ git diff
 
 ```bash
 git add app.js
+git status
+git diff --staged
+```
+
+確認用の `console.log(count);` が残っていないことも見ます。
+
+問題なければcommitします。
+
+```bash
 git commit -m "Add click counter"
 ```
 
@@ -138,4 +152,3 @@ git commit -m "Add click counter"
 次は、フォームとConsoleエラーを扱います。
 
 - [04-forms-and-console.md](04-forms-and-console.md)
-
