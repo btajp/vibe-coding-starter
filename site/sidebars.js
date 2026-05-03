@@ -80,6 +80,23 @@ const sidebars = {
             'route/part-3-git-local/review-ai-changes',
           ],
         },
+        {
+          type: 'category',
+          label: '第4部：ローカルだけで小さく自動化する',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'route/part-4-local-automation/index',
+          },
+          items: [
+            'route/part-4-local-automation/shell-script-basics',
+            'route/part-4-local-automation/executable-and-path',
+            'route/part-4-local-automation/go-cli',
+            'route/part-4-local-automation/stdio-exit-status',
+            'route/part-4-local-automation/scheduling',
+            'route/part-4-local-automation/review-automation',
+          ],
+        },
       ],
     },
     {
