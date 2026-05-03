@@ -24,6 +24,8 @@ PRでは、次のようなことが起きます。
 
 どの流れでも、GitHub上に履歴が残ります。
 
+![reviewコメントを読み、必要なら更新し、mergeまたはcloseを待つ流れ](../../images/route-github-collaboration/review-merge-close-flow.png)
+
 ## reviewコメントを読む
 
 PRにコメントが付いたら、内容を読みます。
