@@ -33,6 +33,24 @@ Windowsの人は、WSL Ubuntuを用意して、Ubuntu側のターミナルで作
 
 ![macOSとWSL Ubuntuを横並びで学ぶ](../../images/route-start/macos-wsl-side-by-side.png)
 
+## Windowsの人が作業する場所
+
+Windowsの人は、Windows側ではなく、WSL Ubuntu側で作業します。
+
+WSL Ubuntuでは、Windows側のファイルとUbuntu側のファイルの両方が見えます。
+この教材では、基本的にUbuntu側の自分用フォルダで作業します。
+
+```text
+/home/あなたのユーザー名
+```
+
+`/mnt/c/Users/...` のような場所はWindows側のフォルダです。
+使えないわけではありませんが、この教材の本線では使いません。
+
+実際に自分がどちら側にいるかは、次の章で `pwd` を使って確認します。
+
+![WSLでは場所をまちがえやすい](../../images/route-start/wsl-home-vs-windows.png)
+
 ## 今どの段階にいるか
 
 まず、自分がどの段階にいるかを確認します。
@@ -63,25 +81,7 @@ Windowsの人は、WSL Ubuntuを用意して、Ubuntu側のターミナルで作
 - `Error`、`fatal:`、`Permission denied`、`command not found` が出たら止まる
 - パスワードやトークンをAIに貼らない
 
-教材のコマンドには、コピーしやすいように先頭の `$` を付けません。
-ターミナルに貼り付けるのは、コードブロックの中身だけです。
-
 ![コマンドは一歩ずつ実行する](../../images/route-start/command-rules.png)
-
-## WSL Ubuntuで特に気をつける場所
-
-WSL Ubuntuでは、Windows側のファイルとUbuntu側のファイルの両方が見えます。
-
-この教材では、基本的にUbuntu側のホームディレクトリで作業します。
-
-```text
-/home/あなたのユーザー名
-```
-
-`/mnt/c/Users/...` のような場所はWindows側のフォルダです。
-使えないわけではありませんが、この教材の本線では使いません。
-
-![WSLでは場所をまちがえやすい](../../images/route-start/wsl-home-vs-windows.png)
 
 ## 詰まったときの聞き方
 
@@ -91,7 +91,8 @@ WSL Ubuntuでは、Windows側のファイルとUbuntu側のファイルの両方
 相談するときは、次の情報を入れると答えが安定します。
 
 ```text
-私はmacOSでこの教材を進めています。
+私はAIコーディングエージェントを使い始める準備をしています。
+OSはmacOSです。
 今いる場所は /Users/自分の名前 です。
 次のコマンドを実行したら、このエラーが出ました。
 
