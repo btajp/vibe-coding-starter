@@ -31,7 +31,7 @@ AGENTS.mdに置く内容とskillに切り出す内容を分け、自分の作業
 
 skillを、特定の作業に必要な知識や手順をまとめたものとして理解します。
 
-### 2. AGENTS.mdとskillを分ける
+### 2. [AGENTS.mdとskillを分ける](02-agents-md-vs-skill.md)
 
 常に守る方針はAGENTS.mdへ、特定作業だけの手順はskillへ切り出す考え方を扱います。
 
