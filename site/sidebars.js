@@ -259,7 +259,18 @@ const sidebars = {
             'advanced/part-5-skills/review-skills',
           ],
         },
-        'advanced/part-6-safety-checks/index',
+        {
+          type: 'category',
+          label: '発展編 第6部：安全装置と確認手順を作る',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'advanced/part-6-safety-checks/index',
+          },
+          items: [
+            'advanced/part-6-safety-checks/diff-as-entry-point',
+          ],
+        },
         'advanced/part-7-ai-review/index',
         'advanced/part-8-subagents/index',
         'advanced/part-9-long-tasks/index',
