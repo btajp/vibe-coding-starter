@@ -220,6 +220,7 @@ const sidebars = {
           items: [
             'advanced/part-3-context-window-notes/context-window-basics',
             'advanced/part-3-context-window-notes/ask-ai-to-question-you',
+            'advanced/part-3-context-window-notes/requirements-note-source-of-truth',
           ],
         },
         'advanced/part-4-prompt-templates/index',
