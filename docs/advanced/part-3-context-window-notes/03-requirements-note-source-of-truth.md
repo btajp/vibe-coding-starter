@@ -191,3 +191,5 @@ AIが作業を始める前に、危ない抜けを見つけることです。
 ## 次へ
 
 次は、resumeとcompactのあとに読み直します。
+
+- [resumeとcompactのあとに読み直す](04-reread-after-resume-compact.md)

@@ -43,7 +43,7 @@ AIが一度に扱える文脈には上限があることを確認します。
 
 会話で決まったことをMarkdownに整理し、あとから読み直せる作業メモにします。
 
-### 4. resumeとcompactのあとに読み直す
+### 4. [resumeとcompactのあとに読み直す](04-reread-after-resume-compact.md)
 
 セッション再開後やcompact後に、AIへどのファイルを読ませ直すべきかを整理します。
 
