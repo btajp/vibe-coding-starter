@@ -237,6 +237,7 @@ const sidebars = {
           items: [
             'advanced/part-4-prompt-templates/prompt-as-workflow',
             'advanced/part-4-prompt-templates/question-facilitator-template',
+            'advanced/part-4-prompt-templates/improvement-checklist-template',
           ],
         },
         'advanced/part-5-skills/index',
