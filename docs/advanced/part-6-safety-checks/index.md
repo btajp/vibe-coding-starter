@@ -29,7 +29,7 @@ AIの変更を受け入れる前に、何を確認すべきかを説明し、自
 
 AIが何を変えたかを、`git status` と `git diff` で確認します。
 
-### 2. build、test、lintを分ける
+### 2. [build、test、lintを分ける](02-build-test-lint.md)
 
 それぞれが何を確認するためのものかを整理します。
 

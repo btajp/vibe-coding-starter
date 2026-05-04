@@ -269,6 +269,7 @@ const sidebars = {
           },
           items: [
             'advanced/part-6-safety-checks/diff-as-entry-point',
+            'advanced/part-6-safety-checks/build-test-lint',
           ],
         },
         'advanced/part-7-ai-review/index',

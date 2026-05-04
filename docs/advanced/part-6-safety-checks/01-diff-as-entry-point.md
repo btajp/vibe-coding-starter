@@ -154,3 +154,9 @@ git diff
 buildやtestは重要ですが、その前に「何が変わったか」を確認します。
 
 次章では、build、test、lintがそれぞれ何を確認するものなのかを分けて考えます。
+
+## 次へ
+
+次は、build、test、lintを分けます。
+
+- [build、test、lintを分ける](02-build-test-lint.md)
