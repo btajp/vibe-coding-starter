@@ -219,6 +219,7 @@ const sidebars = {
           },
           items: [
             'advanced/part-3-context-window-notes/context-window-basics',
+            'advanced/part-3-context-window-notes/ask-ai-to-question-you',
           ],
         },
         'advanced/part-4-prompt-templates/index',
