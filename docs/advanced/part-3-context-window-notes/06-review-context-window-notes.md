@@ -153,4 +153,4 @@ AGENTS.mdはAIに毎回守らせる作業方針です。
 
 次は、プロンプトを作業テンプレートにします。
 
-- [第4部：プロンプトを作業テンプレートにする](../part-4-prompt-templates/index.md)
+- [プロンプトを作業手順として見る](../part-4-prompt-templates/01-prompt-as-workflow.md)
