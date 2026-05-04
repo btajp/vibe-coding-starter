@@ -222,6 +222,7 @@ const sidebars = {
             'advanced/part-3-context-window-notes/ask-ai-to-question-you',
             'advanced/part-3-context-window-notes/requirements-note-source-of-truth',
             'advanced/part-3-context-window-notes/reread-after-resume-compact',
+            'advanced/part-3-context-window-notes/use-supporting-context',
           ],
         },
         'advanced/part-4-prompt-templates/index',
