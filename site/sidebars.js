@@ -255,6 +255,7 @@ const sidebars = {
             'advanced/part-5-skills/skill-role',
             'advanced/part-5-skills/agents-md-vs-skill',
             'advanced/part-5-skills/design-small-skill',
+            'advanced/part-5-skills/avoid-too-many-skills',
           ],
         },
         'advanced/part-6-safety-checks/index',
