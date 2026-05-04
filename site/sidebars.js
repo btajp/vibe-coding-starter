@@ -209,7 +209,18 @@ const sidebars = {
             'advanced/part-2-agents-md/review-agents-md',
           ],
         },
-        'advanced/part-3-context-window-notes/index',
+        {
+          type: 'category',
+          label: '発展編 第3部：コンテキストウィンドウと作業メモを理解する',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'advanced/part-3-context-window-notes/index',
+          },
+          items: [
+            'advanced/part-3-context-window-notes/context-window-basics',
+          ],
+        },
         'advanced/part-4-prompt-templates/index',
         'advanced/part-5-skills/index',
         'advanced/part-6-safety-checks/index',

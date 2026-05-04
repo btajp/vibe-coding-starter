@@ -125,4 +125,4 @@ AIの出力を見て、うまくいったこと、危なかったこと、毎回
 
 次は、コンテキストウィンドウと作業メモを理解します。
 
-- [第3部：コンテキストウィンドウと作業メモを理解する](../part-3-context-window-notes/index.md)
+- [コンテキストウィンドウを理解する](../part-3-context-window-notes/01-context-window-basics.md)
