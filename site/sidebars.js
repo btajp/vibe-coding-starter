@@ -243,7 +243,18 @@ const sidebars = {
             'advanced/part-4-prompt-templates/review-prompt-templates',
           ],
         },
-        'advanced/part-5-skills/index',
+        {
+          type: 'category',
+          label: '発展編 第5部：skillsでAIをカスタマイズする',
+          collapsed: false,
+          link: {
+            type: 'doc',
+            id: 'advanced/part-5-skills/index',
+          },
+          items: [
+            'advanced/part-5-skills/skill-role',
+          ],
+        },
         'advanced/part-6-safety-checks/index',
         'advanced/part-7-ai-review/index',
         'advanced/part-8-subagents/index',
